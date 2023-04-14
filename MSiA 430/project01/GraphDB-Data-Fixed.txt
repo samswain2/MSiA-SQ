@@ -1,0 +1,46 @@
+create (liu:User{name:'liu'})
+create (goce:User{name:'goce'})
+create (diego:User{name:'diego klabjan'})
+create (sarah:User{name:'sarah'})
+create (laura:User{name:'laura montanari'})
+
+create (datawarehouseclass:Class{name:'datawarehouse class'})
+create (datawarehouselab:Class{name:'datawarehouse lab'})
+create (bigdataclass:Class{name:'big data class'})
+create (bigdatalab:Class{name:'big data lab'})
+create (deeplearningclass:Class{name:'deep learning class'})
+create (deeplearninglab:Class{name:'deep learning lab'})
+
+create
+(liu)-[:TEACHES]->(datawarehouselab),
+(goce)-[:TEACHES]->(datawarehouseclass),
+(diego)-[:TEACHES]->(bigdataclass),
+(:User{name:'alex'})-[:TEACHES]->(bigdatalab),
+(:User{name:'ellick chan'})-[:TEACHES]->(deeplearningclass),
+(:User{name:'mark'})-[:TEACHES]->(deeplearninglab)
+
+
+create
+(diego)-[:ATTEND]->(datawarehouseclass),
+(diego)-[:ATTEND]->(datawarehouselab),
+(goce)-[:ATTEND]->(datawarehouseclass),
+(goce)-[:ATTEND]->(datawarehouselab),
+(sarah)-[:ATTEND]->(datawarehouseclass),
+(sarah)-[:ATTEND]->(datawarehouselab),
+(diego)-[:ATTEND]->(deeplearningclass),
+(diego)-[:ATTEND]->(deeplearninglab),
+(goce)-[:ATTEND]->(deeplearningclass),
+(goce)-[:ATTEND]->(deeplearninglab),
+(sarah)-[:ATTEND]->(deeplearningclass),
+(sarah)-[:ATTEND]->(deeplearninglab),
+(laura)-[:ATTEND]->(deeplearningclass),
+(laura)-[:ATTEND]->(deeplearninglab),
+(liu)-[:ATTEND]->(bigdataclass),
+(diego)-[:ATTEND]->(bigdataclass),
+(diego)-[:ATTEND]->(bigdatalab),
+(goce)-[:ATTEND]->(bigdataclass),
+(goce)-[:ATTEND]->(bigdatalab),
+(laura)-[:ATTEND]->(bigdatalab)
+
+
+
