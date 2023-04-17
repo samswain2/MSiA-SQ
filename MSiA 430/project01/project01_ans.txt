@@ -1,0 +1,12 @@
+Answer 1:
+match (liu:User{name:'liu'})-[:ATTEND]->(classTaken:Class)
+with liu, COLLECT(classTaken) as classTakenByLiu
+match (otherStudents:User)-[:ATTEND]->(otherClass:Class)
+where not otherClass in classTakenByLiu
+return otherClass.name, count(otherStudents) as popularity
+order by popularity desc
+limit 1; 
+
+Answer 2: 
+MATCH (user:User)-[:ATTEND]->(class:Class {name: 'datawarehouse class'})
+RETURN class.name, COUNT(user) as confidence;
