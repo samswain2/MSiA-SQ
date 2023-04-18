@@ -1,3 +1,5 @@
+Group members: Samuel Swain, Linyue Zhang
+
 Answer 1:
 match (liu:User{name:'liu'})-[:ATTEND]->(classTaken:Class)
 with liu, COLLECT(classTaken) as classTakenByLiu
