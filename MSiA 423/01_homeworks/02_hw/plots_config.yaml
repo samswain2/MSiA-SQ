@@ -1,0 +1,36 @@
+# Matplotlib config #
+font: 
+  size: 16
+  family: 'sans-serif'
+  sans_serif: 'Tahoma' 
+
+axes:
+  prop_cycle: [
+    '#0085ca', 
+    '#888b8d', 
+    '#00c389', 
+    '#f4364c', 
+    '#e56db1'
+  ]
+  label_size: 20
+  label_color: '#677385'
+  title_size: 20
+
+x_ticks: 
+  label_size: 14
+y_ticks: 
+  label_size: 14
+
+text:
+  color: '#677385'
+
+lines:
+  color: '#0055A7'
+  width: 3
+
+figures:
+  width: 12.0
+  height: 8.0
+
+# 
+
