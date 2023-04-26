@@ -1,0 +1,18 @@
+show_x_rows: 5
+use_first_x_features: 2
+
+test_prop: .3
+random_state: 0
+
+model_input_size: 16
+activation_1: sigmoid
+output_size: 3
+activation_last: softmax
+
+optimizer: adam
+loss: categorical_crossentropy
+metrics: accuracy
+epochs: 10
+batch_size: 5
+
+verbose: 0
