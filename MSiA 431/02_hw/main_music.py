@@ -5,6 +5,7 @@ import multiprocessing
 from mapper_music import mapper_music
 from shuffler_music import shuffler_music
 from reducer_music import reducer_music
+from tqdm import tqdm
 
 if __name__ == '__main__':
     # Define the number of map processes and reduce processes
@@ -12,7 +13,7 @@ if __name__ == '__main__':
     num_reducers = 5
 
     # Read input data from a file
-    input = "C:/Users/nuke2/Desktop/NW Work/Spring Work/MSiA-SQ/Data/MSiA 431/02_hw/music_sample.csv"
+    input = r"D:\Big Data\MSiA 431\02_hw\dataMusic10000.csv"
     with open(input, 'r', encoding='utf-8') as input_file:
         lines = input_file.readlines()
 
@@ -22,7 +23,7 @@ if __name__ == '__main__':
     # Create a pool of processes for the mappers
     with multiprocessing.Pool(num_mappers) as pool:
         # Apply the mapper function to each chunk
-        map_results = pool.map(mapper_music, chunks)
+        map_results = list(tqdm(pool.imap(mapper_music, chunks), total=num_mappers))
 
     # Concatenate the mapper results
     all_lines = [line for chunk in map_results for line in chunk]
@@ -37,7 +38,7 @@ if __name__ == '__main__':
     # Create a pool of processes for the reducers
     with multiprocessing.Pool(num_reducers) as pool:
         # Apply the reducer function to each chunk
-        reduce_results = pool.map(reducer_music, reducer_chunks)
+        reduce_results = list(tqdm(pool.imap(reducer_music, reducer_chunks), total=num_reducers))
 
     # Concatenate the reducer results and print them
     final_results = [result for chunk in reduce_results for result in chunk]
