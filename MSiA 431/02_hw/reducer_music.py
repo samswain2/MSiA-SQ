@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 def reducer_music(lines):
     current_artist = None
     current_max_duration = 0.0

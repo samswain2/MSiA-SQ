@@ -7,26 +7,37 @@ from shuffler_music import shuffler_music
 from reducer_music import reducer_music
 from tqdm import tqdm
 
+def read_in_chunks(file, chunk_size):
+    lines = []
+    for line in file:
+        lines.append(line)
+        if len(lines) >= chunk_size:
+            yield lines
+            lines = []
+    if lines:  # Yield any remaining lines
+        yield lines
+
 if __name__ == '__main__':
     # Define the number of map processes and reduce processes
     num_mappers = 20
     num_reducers = 5
+    chunk_size = 2500000  # Modify this value based on your system's memory capacity
 
     # Read input data from a file
+    
+    # Full music file
     input = r"D:\Big Data\MSiA 431\02_hw\dataMusic10000.csv"
+    # Sample music file
+    # input = r"C:\Users\nuke2\Desktop\NW Work\Spring Work\MSiA-SQ\Data\MSiA 431\02_hw\music_sample.csv"
+
     with open(input, 'r', encoding='utf-8') as input_file:
-        lines = input_file.readlines()
-
-    # Split the input file into 20 smaller chunks
-    chunks = [lines[i::num_mappers] for i in range(num_mappers)]
-
-    # Create a pool of processes for the mappers
-    with multiprocessing.Pool(num_mappers) as pool:
-        # Apply the mapper function to each chunk
-        map_results = list(tqdm(pool.imap(mapper_music, chunks), total=num_mappers))
-
-    # Concatenate the mapper results
-    all_lines = [line for chunk in map_results for line in chunk]
+        # Create a pool of processes for the mappers
+        with multiprocessing.Pool(num_mappers) as pool:
+            all_lines = []
+            for lines in tqdm(read_in_chunks(input_file, chunk_size)):
+                # Apply the mapper function to each chunk
+                map_results = pool.map(mapper_music, [lines])
+                all_lines.extend([line for chunk in map_results for line in chunk])
 
     # Apply shuffle_and_sort to the mapper output
     sorted_lines = shuffler_music(all_lines)

@@ -1,5 +1,4 @@
 !!!,143.98649
-(hed) p.e.,12.95628
 089 Clique feat. Minnesota Snipe & Skinny Cueball,213.68118
 089 Clique feat. Prophet,174.602
 1. Futurologischer Congress,204.93016
@@ -17,7 +16,7 @@
 3 Steps Ahead,45.50485
 3 Way Funk,210.25914
 3 of Hearts,224.07791
-30 Seconds To Mars,472.39791
+30 Seconds To Mars,297.53424
 32 Leaves,233.66485
 3OH!3,211.66975
 4 Skins,250.48771
@@ -71,7 +70,6 @@ Ada Jane,288.80934
 Adalberto Santiago,299.93751
 Adam Ant,233.40363
 Adam Richman,344.94649
-Adam Richmond,36.10077
 Adolph Hofner,152.0322
 Adr Lavey,194.45506
 Adrenalin O.D.,142.65424
@@ -101,7 +99,6 @@ Al Denson,299.33669
 Al Dexter,150.9873
 Al Di Meola,291.02975
 Al DiMeola,319.84281
-Al Duvall,167.28771
 Al Rapone,185.93914
 Al Toomer,225.90649
 Alacranes Musical,284.1073
@@ -109,7 +106,6 @@ Alain Morisod,245.44608
 Alain Souchon,231.31383
 Alain Turban,219.19302
 Alain-Franτois,294.42567
-Alan Feinberg,155.19302
 Alan Silvestri,504.05832
 Alas,628.21832
 Albert Ayler,632.34567
@@ -118,7 +114,7 @@ Albert King,668.62975
 Albert PrΘjean,190.17098
 Alberto Cortez,252.78649
 Albin Myers,493.29587
-Alceu Valenτa,205.87057
+Alceu Valenτa,188.65587
 Ale M÷ller,184.42404
 Alejandro Lerner,267.31057
 Aleks Syntek,350.11873
@@ -135,7 +131,6 @@ Alexisonfire,212.11383
 Alfredo GutiΘrrez,171.80689
 Alfredo Kraus,322.29832
 Alfredo Kraus - Orquesta de Conciertos de Madrid - Pablo Sorozßbal,243.48689
-Alfredo Kraus/Paul Plishka/Matteo Manuguerra/Sherrill Milnes/Trinity Boys' Choir/Ambrosian Opera Chorus/National Philharmonic Orchestra/James Levine,34.55955
 Alfredo Kraus/Tatiana Troyanos/London Philharmonic Orchestra/Michel Plasson,55.40526
 Alias,310.72608
 Alice Cooper,210.54649
@@ -146,10 +141,10 @@ Alkonost,542.87628
 All Girl Summer Fun Band,212.84526
 All Leather,249.5473
 All Shall Persih,215.61424
-All Time Low,227.70893
+All Time Low,221.67465
 Alphonse Mouzon,355.21261
 Alternative TV,305.71057
-Alturas,293.90322
+Alturas,279.84934
 Alvin Youngblood Hart,231.10485
 Alvin YoungbloodáHart,159.39873
 Alvino Rey And His Orchestra,193.74975
@@ -187,7 +182,6 @@ Andy Andy,264.46322
 Andy Griffith,215.48363
 Andy Russell,188.682
 Angel Romero,110.05342
-Angel Romero / The Academy of St. Martin in the Fields / Iona Brown,141.322
 Angela Dimitriou,265.37751
 Angela Lashley,196.17914
 Angela Stewart,211.33016
@@ -198,7 +192,6 @@ Angelo Badalamenti / Patrick Wolf,124.83873
 Angels,235.17995
 AngΘlica Marφa,171.2322
 AngΘlla Christie,348.36853
-Anita Kerr,156.52526
 Ann Hampton Callaway,347.79383
 Ann Hampton Callaway;Laura Benanti;Michael Gruber;Everett Bradley,217.73016
 Ann Lee,380.08118
@@ -243,7 +236,7 @@ Art Ensemble Of Chicago,384.54812
 Arthur Brown,422.16444
 Arthur Fiedler,496.1171
 Arthur Fiedler;Earl Wild;Pasquale Cardillo,976.56118
-Arthur Tracy,195.082
+Arthur Tracy,188.86485
 Artie Fishel & The Promised Band,145.76281
 Arturo Sandoval,315.48036
 Asha Puthli,351.65995
@@ -254,8 +247,6 @@ Ashtrax,278.36036
 Asleep At The Wheel,399.04608
 Assassin,230.47791
 Astarte,568.78975
-Asterisk*,41.84771
-Astrovamps,235.72853
 Asure,215.11791
 Aswad,280.94649
 At All Cost,443.68934
@@ -286,7 +277,6 @@ B.A.D.,241.81506
 B.B. King,237.66159
 B.B.King,167.49669
 B.o.B,269.63546
-BB King,186.40934
 BLEED THE SKY,202.91873
 BMX Bandits,208.40444
 BT,506.27873
@@ -320,8 +310,7 @@ Barbara Carr,147.66975
 Barbara Fairchild,329.24689
 Barbara Jones,242.20689
 Barbara Lusch,263.81016
-Barbara Lynn,156.42077
-Barbarito Diez,183.43138
+Barbarito Diez,176.69179
 Bare Jr.,254.79791
 Barenaked Ladies,173.19138
 Barley Bree,279.58812
@@ -329,7 +318,6 @@ Baroness,354.79465
 Barrabas,241.3971
 Barrio Obrero,231.47057
 Barry Goldberg,265.61261
-Barry Kⁿnzel,251.37587
 Barry Manilow,247.24853
 Barry Manilow Featuring The Glenn Miller Orchestra with Debra Byrd,172.06812
 Barry Mann,170.44853
@@ -343,7 +331,6 @@ Beat Pharmacy,569.46893
 Beatnuts,257.54077
 Beatnuts featuring Tony Touch,135.13098
 Beatnuts featuring dead prez and Cheryl Pepsi Riley,318.56281
-Beatnuts with Lil' Donny,78.65424
 BeauSoleil,268.30322
 Beautiful Creatures,263.96689
 Beaver Harris,193.4624
@@ -374,7 +361,6 @@ Ben Watt feat. Estelle,389.19791
 Benabar,238.44526
 Beneath The Sky,275.9571
 Benga,277.55057
-Benny Spellman,171.75465
 Beogradski Sindikat,415.50322
 Beres Hammond,252.55138
 Beres Hammond Feat. Jah Youth,247.77098
@@ -385,7 +371,6 @@ Bersuit Vergarabat,307.35628
 Bert Kaempfert,201.42975
 Bert Kaempfert And His Orchestra,201.92608
 Bescenta,243.1473
-Bessie Smith,195.70893
 Beth Nielsen Chapman,220.05506
 Betika_ Daouda,286.77179
 Beto Cuevas,259.52608
@@ -429,10 +414,8 @@ Billy Butler,213.99465
 Billy Higgins,314.40934
 Billy Higgins_ Bob Berg_ Cedar Walton_ Tony Dumas,451.34322
 Billy May & His Orchestra,312.92036
-Billy Murray,176.5873
 Billy Pilgrim,220.26404
 Billy Price_ Fred Chapellier,356.93669
-Billy Walker,133.56363
 Bimbo,288.86159
 Bimbo Band,85.08036
 Bingo Players,171.49342
@@ -444,14 +427,12 @@ Bitter End,282.43546
 Bitty McLean,246.46485
 Bizarre Inc,420.10077
 Bizzy Bone,238.21016
-Bizzy Bone Presents,50.9122
 Black Box,272.14322
 Black Debbath,278.46485
 Black Eyed Peas,229.61587
 Black Eyed Peas / Les Nubians / Mos Def,235.10159
 Black Eyed Peas / Terry Dexter,275.04281
 Black Flag,1030.19057
-Black History,251.402
 Black Messiah,488.41098
 Black Sheep,248.37179
 Black Tambourine,236.35546
@@ -482,7 +463,6 @@ Bob Carlisle,331.25832
 Bob Cheevers,240.22159
 Bob Crosby,173.73995
 Bob Dylan,320.70485
-Bob Hope,147.722
 Bob Margolin,227.00363
 Bob Marley,224.96608
 Bob Marley & The Wailers,320.15628
@@ -529,7 +509,7 @@ Bowen_ Robin Huw,244.29669
 Boyz II Men,329.27302
 Brainchoke,91.01016
 Brand X,292.5971
-Brasilian Tropical Orchestra,191.03302
+Brasilian Tropical Orchestra,160.31302
 Bravehearts,209.03138
 Bravehearts featuring Nas and Jully Black,221.04771
 Brazilian Tropical Orchestra,198.32118
@@ -542,7 +522,6 @@ Brian Eno And David Byrne,296.33261
 Brian Free & Assurance,243.80036
 Brian Keane,216.05832
 Brian Littrell,236.45995
-Brian Tyler,128.54812
 Brice Kapel,297.09016
 Brigada Victor Jara,312.99873
 Britney Spears,530.12853
@@ -590,7 +569,6 @@ Butterfly Temple,100.5971
 Butthole Surfers,512.1824
 Buzzcocks,219.19302
 Buzzhorn,239.98649
-Buzzov¼en,333.58322
 Byron Cage featuring Tye Tribbett,240.43057
 Byther Smith,418.87302
 Byzantine,300.01587
@@ -606,7 +584,6 @@ CMW - Compton's Most Wanted,217.62567
 Caballo Dorado,190.22322
 Cabas,284.31628
 Cabin Crew,194.97751
-Cachao,84.94975
 Cache Cache,245.49832
 Cactus,310.64771
 Cadacross,217.93914
@@ -633,7 +610,6 @@ Cannon's Jug Stompers,186.64444
 Cantara,286.58893
 Capital Tax,262.79138
 Capleton,233.63873
-Capone-N-Noreaga,217.41669
 Capone-N-Noreaga feat. Busta Rhymes and Ron Browz,256.1824
 Captain Beefheart & The Magic Band,206.57587
 Captain Hollywood Project,372.27057
@@ -675,7 +651,6 @@ Cassius Clay,246.96118
 Casual,270.78485
 Catherine Howe,257.14893
 Catherine Howe & Vo Fletcher,242.62485
-Catherine King/Matthew Schwinghammer/The American Boychoir,125.3873
 Catia Werneck,226.66404
 Cats In Boots,208.79628
 Catupecu Machu,322.35057
@@ -683,7 +658,6 @@ Cauda Pavonis,205.11302
 Cauterize,240.43057
 Cavo,207.0722
 Cece Winans,292.51873
-Cecilia Bartoli / International Chamber Soloists / Orchestra La Scintilla / Adam Fischer,225.14893
 Cedric Gervais Featuring Caroline,396.5122
 Cedric Gervais feat. Second Sun,392.9073
 Cedric Myton,520.04526
@@ -716,7 +690,7 @@ Charlie Cruz,288.83546
 Charlie Haden,292.17914
 Charlie Haden & Chris Anderson,412.21179
 Charlie Khan,208.24771
-Charlie Louvin,227.52608
+Charlie Louvin,179.30404
 Charlie McCoy,282.53995
 Charlie Patton,173.322
 Charlie Peacock,355.34322
@@ -724,7 +698,7 @@ Charlie Rich,268.7473
 Charlie Walker,152.73751
 Charlotte Gainsbourg,241.65832
 Charly Garcia,162.71628
-Charly Garcφa,300.14649
+Charly Garcφa,223.05914
 Chase & Status,398.54975
 Chatelaine,150.17751
 Checkers,171.31057
@@ -741,7 +715,6 @@ Chico Hamilton Quintet,316.73424
 Chimaira,342.36036
 Choir & Great Symphony Orchestra of the All-Union Radio_ N. Shpiller_ S. Krassovsky_ V. Gagarina & N,541.23057
 Chops,171.2322
-Chorus Line,150.69995
 Chris Brown,389.25016
 Chris Camozzi,276.40118
 Chris Clark,226.11546
@@ -757,7 +730,6 @@ Christian Quast,498.83383
 Christian adam,163.5522
 Christie Hennessy,332.69506
 Christina Aguilera,347.84608
-Christoper Titus,119.66649
 Christophe Beck,150.09914
 Christos Dantis,251.08853
 Christos Kedras,321.64526
@@ -768,7 +740,7 @@ ChΘco Feliciano And Joe King,273.65832
 Ciaran Byrne,150.282
 Cinder,218.61832
 Cindy Morgan,295.10485
-Circle Jerks,122.64444
+Circle Jerks,88.89424
 Circular,429.29587
 Cirrus,210.05016
 Citizen Kaned,385.33179
@@ -788,7 +760,6 @@ Clay Crosse,286.74567
 Clementina De Jesus,181.39383
 Click / Click_ M_Ferri,451.49995
 Cliff Bruner,188.31628
-Cliff Edwards/Disney Studio Chorus,193.67138
 Clifton Chenier,281.15546
 Clockwise,404.68853
 Clp,338.31138
@@ -802,9 +773,7 @@ ColdWorld,344.68526
 Coldplay,410.8273
 Colin James,280.11057
 Colombiafrica - The Mystic Orchestra,318.79791
-Columbia Symphony Orchestra;Igor Stravinsky,135.88853
 Commander Cody & His Lost Planet Airmen,162.45506
-Commander Cody And His Lost Planet Airman,199.13098
 Commander Cody And His Lost Planet Airmen,205.71383
 Commissioned,342.83057
 Computer Paul,577.48853
@@ -836,7 +805,6 @@ Cornell Campbell,215.01342
 Corona,343.40526
 Cotton Candy,269.7922
 Count Ossie,234.9971
-Coven,244.50567
 Cowboy Mouth,237.60934
 Crabby Appleton,186.69669
 Cracker,380.86485
@@ -850,25 +818,24 @@ Crematorium,210.1024
 Criminal Class USA is Hush Hush Revolution,174.18404
 Cristina Pato - Mutenrohi,331.88526
 Cristy Lane,196.80608
-Cross Country,193.64526
+Cross Country,168.77669
 Crowbar,270.73261
 Crucial Conflict,230.5824
 Crusaders,117.68118
 Crystals,150.90893
 Cumberland Quartet,192.88771
-Cursed,74.68363
-Curt Bois,203.02322
+Curt Bois,153.52118
 Curtis,456.51546
 Curtis Mayfield,411.92444
 Cut Copy,312.08444
 Cutting Edge,358.71302
 Cybertribe,387.97016
 Cyndi Wang,260.98893
+Cyndi Wang,260.98893
 Cyril Pahinui,458.91873
 CΓndido,232.88118
 CΘline Dion,274.57261
 C≤mplices,307.56526
-D' Militante,420.49261
 D' Militante,420.49261
 D'Molls,259.16036
 D.A.D.,283.16689
@@ -930,14 +897,12 @@ Daler Mehndi,245.49832
 Daler Mehndi;Chitra,363.80689
 Dallas Holm,273.00526
 Dame Edna Everage with Carl Davis conducting the London Symphony Orchestra and The New Antipodean Singers,494.15791
-Dame Joan Sutherland / New Philharmonia Orchestra / Richard Bonynge,111.0722
 Damita,249.80853
 Damita Jo,182.33424
 Damone,217.20771
 Dan Cummins,169.09016
 Dan Hicks,159.9473
 Dan Moretti,341.49832
-Dan Shen_ Gruppo Vocale Cantemus_ Ensemble Airone_ Luigi Marzola,84.1922
 Dancecore Allstars,223.29424
 Danger Danger,292.85832
 Daniel Chan,222.14485
@@ -948,7 +913,7 @@ Daniela Dess∞,330.65751
 Danielle Bollinger,555.54567
 Danilo Perez,197.19791
 Danilo Perez / Claus Ogerman,459.31057
-Dann Huff,160.73098
+Dann Huff,147.9571
 Danny Barnes,169.482
 Danny Davis & The Boys,169.19465
 Danny Diablo feat. Puerto Rican Myke,281.49506
@@ -974,7 +939,7 @@ Daryl Coley,352.88771
 Daryl Coley Featuring the New Generation Singers Reunion Choir,274.93832
 Daryl Hall & John Oates,299.49342
 Daughters,64.9922
-Dave Alvin,354.19383
+Dave Alvin,255.89506
 Dave And Ansel Collins,151.84934
 Dave Baby Cortez,125.6224
 Dave Brockie Experience,135.8624
@@ -1002,7 +967,6 @@ David Lynch,618.23955
 David Martin,286.4322
 David Meece,268.01587
 David Mingyue Liang,757.99465
-David Palmer,486.94812
 David Phelps,277.21098
 David Raksin,141.40036
 David Robertson,285.04771
@@ -1024,9 +988,7 @@ DeGarmo & Key,275.74812
 Dead Hearts,44.30322
 Dead Kennedys,216.842
 Dead Prez,154.30485
-Dead To Me,145.55383
-Dealership,103.52281
-Dean Elliott And His Big Band,150.33424
+Dead To Me,105.42975
 Dean Evenson,203.93751
 Dean Martin,165.66812
 Death Cab for Cutie,119.40526
@@ -1034,7 +996,7 @@ Death From Above 1979,344.842
 Death SS,258.29832
 Deathstar,229.8771
 Debbie Davies,283.79383
-Deborah Allen,189.57016
+Deborah Allen,172.48608
 Deborah Coleman,230.60853
 Deborahe Glasgow,390.32118
 Debra Laws,257.48853
@@ -1065,7 +1027,7 @@ Dennis Brown,468.16608
 Dennis O'Neill,384.62649
 Deodato,378.09587
 Der Moderne Man,238.8371
-Der Plan,218.67057
+Der Plan,213.91628
 Derek Bailey,237.53098
 Derek Bell,268.32934
 Descendents,183.90159
@@ -1145,7 +1107,7 @@ Donnie McClurkin,318.82404
 Donny Hathaway,322.87302
 Dons,240.22159
 Dope Stars Inc.,233.22077
-Dora The Explorer,169.09016
+Dora The Explorer,159.29424
 Dorothy Norwood,512.91383
 Dottie Rambo_ The Whites,130.29832
 Dottie West,187.53261
@@ -1185,7 +1147,7 @@ DΘdΘ Saint-Prix,310.83057
 EPMD,310.54322
 EPMD / Nocturnal,204.5122
 Eagles,427.36281
-Eagles Of Death Metal,225.48853
+Eagles Of Death Metal,215.64036
 Earl Hooker,298.91873
 Earth,861.83138
 Eason Chan,275.59138
@@ -1210,19 +1172,18 @@ Eddie Cano,225.17506
 Eddie Cantor,196.88444
 Eddie Henderson,277.57669
 Eddie Jones,114.93832
-Eddie Money,213.68118
+Eddie Money,189.30893
 Eddie Palmieri,392.85506
 Eddie Turner,306.78159
-Eddie and the Subtitles,143.98649
 Eddy Arnold,183.50975
-Eddy Raven,223.26812
+Eddy Raven,215.40526
 Edelweiss,201.42975
 Eden's Bridge,337.13587
 Edgar Bori,309.002
 Edgar De L'est,317.28281
 Edith Lefel,276.50567
 Edmond Leung,268.48608
-Edmundo Ros,174.86322
+Edmundo Ros,170.37016
 Edmundo Ros & His Orchestra,183.14404
 Edouard Duleu,130.06322
 Edu Lobo,309.52444
@@ -1261,7 +1222,7 @@ Elli Kokkinou,284.65587
 Elliot Goldenthal,617.82159
 Elliot Smith,175.82975
 Elmer Bernstein,231.67955
-Elmore James,191.13751
+Elmore James,57.39057
 Elton Britt,132.85832
 Eluveitie,307.69587
 Elva Hsiao,287.92118
@@ -1298,7 +1259,7 @@ Eri EsittΣjiΣ,158.58893
 Eric B. & Rakim,335.01995
 Eric Burdon,318.37995
 Eric Champion,327.49669
-Eric Demarsan,150.17751
+Eric Demarsan,107.7024
 Erick Sermon,235.51955
 Erik Berglund,1815.2224
 Erik Hassle,308.81914
@@ -1336,7 +1297,6 @@ F.I.R.,248.0322
 F.l.y.,20.79302
 F4,279.32689
 FFH,277.62893
-FIR,206.57587
 FSTZ,280.58077
 FU-Schnickens,313.80853
 Fabißn,241.68444
@@ -1394,7 +1354,6 @@ Flink,273.10975
 Floor,211.90485
 Flor Silvestre,207.75138
 Flora Purim,246.67383
-Florida Boys,114.62485
 Flowin Immo et Les Freaqz,225.59302
 Floyd Cramer,125.85751
 Flutlicht,513.56689
@@ -1408,7 +1367,6 @@ Fontella Bass,204.35546
 Foo Fighters,313.10322
 For Squirrels,200.07138
 Forensics,415.45098
-Fort Minor,43.38893
 Fort Minor (Featuring Mr. Hahn),236.66893
 Fortitude,260.46649
 Fountains Of Wayne,165.61587
@@ -1426,8 +1384,7 @@ Francky Vincent,261.74649
 Franco,251.61098
 Franco_ Valeriana,205.50485
 Frank Caliendo,433.47546
-Frank Chacksfield,151.82322
-Frank Chacksfield & His Orchestra,155.37587
+Frank Chacksfield,142.65424
 Frank Ifield,163.60444
 Frank Marino & Mahogany Rush,336.79628
 Frank Sinatra,166.05995
@@ -1450,7 +1407,7 @@ Freddie Roulette,232.85506
 Frederic Galliano,1394.75546
 Frederick Knight,198.81751
 Fredericks_ Goldman_ Jones,344.21506
-Frederik,179.87873
+Frederik,179.3824
 Fredi,243.722
 Free,273.52771
 Freedom,245.49832
@@ -1469,14 +1426,11 @@ Furry Lewis,234.78812
 Future Leaders of the World,249.67791
 Fuzz,238.36689
 Fyah Blaze,217.25995
-G Unit feat. 50 Cent,101.43302
 G Unit ft. 50 Cent_ Lloyd Banks & Tony Yayo,202.10893
 G-Unit,274.78159
 G.G. Allin,95.50322
-GARFIELD,53.86404
 GG Allin,198.84363
 GWAR,261.79873
-GZA/The Genius,237.34812
 Gabinete Caligari,304.32608
 Gabriel Grossi,253.43955
 Gabriel Yared,229.98159
@@ -1525,7 +1479,6 @@ George Nooks,252.3424
 George Schuller,409.0771
 Georges Brassens,184.76363
 Georges Delerue,417.12281
-Georges Parys,155.58485
 Georgia Satellites,190.40608
 Gerald Clayton,393.63873
 Gerald Veasley,371.25179
@@ -1548,7 +1501,6 @@ Gisselle,268.87791
 Giuseppi Logan,454.94812
 Glad,270.602
 Glen Campbell,202.70975
-Glen Campbell And Bobbie Gentry,183.11791
 Glen Ricks,242.20689
 Glen Washington,237.19138
 Gloria,219.24526
@@ -1556,7 +1508,7 @@ Gloria De Haven,163.42159
 Gloria Lasso,200.64608
 Gloriana,196.30975
 Go Fish,344.92036
-Goatwhore,225.64526
+Goatwhore,224.86159
 Gob,209.60608
 God Lives Underwater,215.40526
 Gold City,182.25587
@@ -1564,7 +1516,6 @@ Goldfinger,204.25098
 Goldfish,432.14322
 Gonzalo Rubalcaba,598.62159
 Goose,395.85914
-Gordon Jenkins,190.48444
 Gordon MacRae,470.9873
 Gorillaz,249.93914
 Gorki,209.31873
@@ -1625,17 +1576,16 @@ Hal Russell,397.16526
 Halfway to Gone,255.42485
 Hall & Oates,170.29179
 Handsome Boy Modeling School,384.70485
-Hank Locklin,168.6722
+Hank Locklin,166.66077
 Hank Penny,170.47465
 Hank Penny & Sue Thompson,119.58812
 Hank Penny & The Lincoln Penny Orchestra,123.21914
 Hanoi Rocks,304.22159
 Happy Mondays,389.0673
 Harald Kloser,178.1024
-Harald Kloser / Thomas Wander / Thomas Schobel,163.21261
 Hard Romantic,267.7024
 HardNox,228.80608
-Harry Choates,177.78893
+Harry Choates,138.1873
 Harry Connick_ Jr,192.07791
 Harry Connick_ Jr.,364.64281
 Harry Diboula,249.88689
@@ -1668,13 +1618,13 @@ Helen O'Connell,180.6624
 Hellsongs,272.14322
 Helmet,257.54077
 Hem,252.86485
-Hemdale,166.68689
+Hemdale,107.57179
 Henri Pousseur,1280.522
 Henri Rene And His Orchestra,168.54159
 Henry Lee Summer,266.4224
 Henry Mancini,187.74159
 Her Majesty's Finest,149.34159
-Herb Alpert And The Tijuana Brass,176.66567
+Herb Alpert And The Tijuana Brass,163.94404
 Herbert  von Karajan,201.89995
 Herbert Von Karajan,1143.03955
 Herbert von Karajan and Turin RAI Symphony Orchestra,770.35057
@@ -1685,7 +1635,7 @@ Hevia,331.88526
 Hey Colossus,420.07465
 Hi-Fi Companions,464.5873
 Hi-Tack,345.96526
-High Strung_ The,165.3024
+High Strung_ The,123.8722
 Hinge,247.48363
 Hins Cheung,238.21016
 Hiram Bullock,502.69995
@@ -1718,7 +1668,6 @@ Hushabye Baby,227.52608
 Hysterie,389.642
 HΘlio Ziskind,148.50567
 HΘroes del Silencio,249.86077
-I Hate Sally,163.63057
 I Nuovi Angeli,231.07873
 I Wayne,244.32281
 I.N.T.,152.92036
@@ -1756,12 +1705,12 @@ Inspector 9,267.91138
 Inspiral Carpets,283.76771
 Intars Busulis,229.11955
 Intex Systems,131.13424
-Ionics,140.38159
 Irini Merkouri,237.81832
 Irish Tenors,269.47873
 Irma Thomas,240.69179
 Irreversφveis,254.82404
 Irtio,333.73995
+Irwin Goodman,231.47057
 Irwin Goodman,231.47057
 Isaacs,194.01098
 Isabel Pantoja,329.32526
@@ -1771,8 +1720,6 @@ Israel & Moises,213.65506
 It Dies Today,184.24118
 Ivan Parker,207.90812
 Izzy,277.10649
-Izzy Stradlin And The Ju Ju Hounds,267.65016
-Izzy Stradlin And The Ju Ju Hounds,267.65016
 J Bostron & Beretta,320.93995
 J-MACK,231.81016
 J. B. Lenoir,190.64118
@@ -1793,7 +1740,6 @@ Jack Johnson,264.82893
 Jack Johnson and Friends / Matt Costa,136.30649
 Jack Miles,174.34077
 Jack Off Jill,149.36771
-Jack Orsen & Taktlo$$,200.51546
 Jack Orsen feat. Fumanschu_ Justus,210.54649
 Jack Sheldon,319.39873
 Jackie Davis,166.39955
@@ -1818,9 +1764,8 @@ Jake Hess,298.89261
 James Blackwood with The Light Crust Doughboys,138.16118
 James Carter,366.0273
 James Darren,172.25098
-James Horner,269.7922
+James Horner,231.57506
 James Hunter,188.73424
-James Ingram,376.68526
 James Last,260.12689
 James Newton Howard,110.52363
 James Scott Skinner,184.52853
@@ -1903,7 +1848,7 @@ Jeremy Fisher,257.64526
 Jeremy Spencer,289.77587
 Jericho,223.92118
 Jerry Butler,167.18322
-Jerry Goldsmith,281.28608
+Jerry Goldsmith,169.1424
 Jerry Lewis,446.37995
 Jerry Reed,138.4224
 Jerry Yan,277.18485
@@ -1920,7 +1865,7 @@ Jewel,529.91955
 Jill Paquette,199.70567
 Jim Breuer,478.92853
 Jim Bryson,276.21832
-Jim Chappell,296.12363
+Jim Chappell,263.94077
 Jim Jones / Chink Santana,289.74975
 Jim Jones / Max B,256.39138
 Jim Jones featuring Oshy,224.31302
@@ -1951,7 +1896,7 @@ Jimmy Witherspoon,197.51138
 Jimmy Wyble,181.96853
 Jinx,407.37914
 Jo Privat,164.38812
-Jo-El Sonnier,233.01179
+Jo-El Sonnier,214.282
 Joan Sutherland,264.12363
 Joanna Connor,243.66975
 Joa~o Gilberto,98.14159
@@ -1983,7 +1928,7 @@ John Cephas & Phil Wiggins,158.30159
 John D. Loudermilk,252.682
 John Davis,199.31383
 John Davis & Emma Doyle,184.86812
-John Debney,193.51465
+John Debney,76.79955
 John Digweed,460.79955
 John Doan,274.99057
 John Fogerty,354.35057
@@ -2005,7 +1950,6 @@ John Stevens,245.44608
 John Stewart,290.53342
 John Tchicai,250.72281
 John Travolta / Christopher Walken,287.16363
-John Van Tongeren,45.37424
 John Wayne,192.70485
 John Wesley,484.62322
 John Wesley Ryles,183.95383
@@ -2023,9 +1967,7 @@ Johnny Osbourne,271.5424
 Johnny Otis,182.46485
 Johnny Otis Show,164.8322
 Johnny Pacheco,334.52363
-Johnny Pacheco/Rolando La Serie,136.09751
 Johnny Pearson,153.70404
-Johnny Vicious,27.16689
 Johnny Winter,315.92444
 Joi,425.16853
 Jonathan Edwards / Will Ferrell,159.58159
@@ -2040,19 +1982,18 @@ Jose Luis Perales,253.12608
 Joselito,198.76526
 Josh Groban,311.14404
 Josh Mullins,193.72363
-Josh Turner,215.61424
+Josh Turner,207.93424
 Josh White,181.49832
 Joshua Rifkin,282.09587
 Josie,303.20281
 JosΘ Augusto,284.70812
 JosΘ Augusto;Catia Guimma,256.15628
 JosΘ Roberto Bertrami,204.87791
-JosΘlito,205.45261
+JosΘlito,139.78077
 Joy Division,245.34159
 Joy Enriquez,260.96281
 Joy Kitikonti,413.04771
 Joπo Gilberto,333.89669
-Joπo Gilberto / Gilberto Gil / Caetano Veloso,77.00853
 Juan Carlos Baglietto,274.99057
 Juan Carmona,369.89342
 Juan Carmona; Ricardo Larroze,234.05669
@@ -2068,7 +2009,6 @@ Jude Taylor & His Burning Flames,260.46649
 Judy Mowatt,349.51791
 Juelz Santana,233.92608
 Juelz Santana / Bezel,254.51057
-Juelz Santana / Freekey Zeekey / Monique Garnett,79.64689
 Juggler,231.94077
 Juice Leskinen,271.77751
 Julie Roberts,287.50322
@@ -2108,17 +2048,16 @@ Kali,601.99138
 Kalibas,164.20526
 Kamelo Punto Semos,258.84689
 Kanda Bongo Man,554.68363
-Kane,422.73914
+Kane,395.83302
 Kanye West,271.25506
 Kanye West / Adam Levine,204.5122
 Kanye West / Consequence / Cam'Ron,333.34812
-Kanye West / Lupe Fiasco,236.72118
 Kapelle Herrenweide,270.62812
 Karan Casey,189.88363
 Karaoke (Made famous by DMX),218.17424
 Kardinal Offishall / Keri Hilson,224.28689
 Karen Peck & New River,218.98404
-Karen Peck And New River,280.5024
+Karen Peck And New River,262.84363
 Kari Tapio,224.7571
 Karlheinz Stockhausen,277.18485
 Karnig Sarkissian,476.47302
@@ -2152,7 +2091,6 @@ Kenny G,285.98812
 Kenny G Featuring Brian McKnight,232.25424
 Kenny G featuring Daryl Hall,236.93016
 Kenny Neal,295.1571
-Kenny Price,129.25342
 Kenny Rogers,258.89914
 Kenny Wayne Shepherd,386.48118
 Kent,257.74975
@@ -2163,7 +2101,6 @@ Kevin Max,219.01016
 Khold,207.93424
 Kid Sister,277.2371
 Kieran,243.25179
-Kill The Client,57.18159
 Killers,218.8273
 Killswitch Engage,254.45832
 Kim English,387.26485
@@ -2184,7 +2121,7 @@ Kirk Franklin with tobyMac & Sonny (of P.O.D.),299.85914
 Kisha,225.38404
 Kiss,290.84689
 Kitaro,428.72118
-Kitty Kallen,165.45914
+Kitty Kallen,161.38404
 Kitty Wells,172.48608
 Kix,366.57587
 Klaus Badelt,592.56118
@@ -2235,7 +2172,6 @@ LL Cool J / Freeway,264.48934
 LORE,423.07873
 La 5A Estacion,135.8624
 La BergΦre,243.80036
-La Billo_ Los Mel≤dicos,195.29098
 La Charanga Rubalcaba,217.99138
 La Divina Pastora,327.78404
 La Mancha De Rolando,243.98322
@@ -2263,14 +2199,10 @@ Larytta,278.12526
 Las Ketchup,195.73506
 Las Ni±as,217.62567
 Latif,265.1424
-Laura Leon,92.13342
-Laura Mikkola,28.23791
-Lauren Wagner & Fred Weldy,51.12118
 Lauren Wood,352.33914
 Laurie Berkner,233.45587
 Laurindo Almeida,234.16118
 Laurindo Almeida / Carlos Barbosa-Lima / Charlie Byrd,286.14485
-Laurindo Almeida / Charlie Byrd,232.6722
 Le Vangle,258.2722
 Leaders Of The New School,263.88853
 Leana,425.92608
@@ -2308,11 +2240,10 @@ Les Bantous De La Capitale,431.93424
 Les Blaireaux,297.76934
 Les Bonapartes,190.69342
 Les Brown,203.7024
-Les Hou-Lops,181.86404
+Les Hou-Lops,177.50159
 Les Hurlements D'leo,334.13179
 Les Malpolis,298.89261
 Les Ogres De Barback,404.45342
-Les Paul and Mary Ford,172.59057
 Les Paul_ Mary Ford,158.40608
 Les Rythmes Digitales feat. Nik Kershaw,297.45587
 Les Rythmes Digitales/ Tzant Feat. ODC MC,186.40934
@@ -2337,14 +2268,12 @@ Light Of The World,251.92444
 Lightforce,397.26975
 Lighthouse Family,241.8673
 Lightnin' Hopkins,70.53016
-Lightnin' Slim,177.68444
 Lil Boosie,243.35628
 Lil Boosie & Webbie,354.16771
 Lil Boosie feat. Bun B_ Trae_ Yo Gotti & Foxx,318.79791
 Lil Mz. 313 featuring DJ Rashad,231.73179
 Lil Wayne,98.16771
 Lil' Band O' Gold,312.842
-Lil' Romeo,211.82649
 Lili Ivanova,268.53832
 Lily Allen,277.83791
 Lily Allen Featuring Ours,189.20444
@@ -2367,7 +2296,7 @@ Lit,246.80444
 Little Angels,229.01506
 Little Brother,245.28934
 Little Capes,289.64526
-Little Eva,171.78077
+Little Eva,149.65506
 Little Feat,330.73587
 Little Freddie King,443.55873
 Little Joe,239.01995
@@ -2386,7 +2315,7 @@ Loketo,291.3171
 Lole y Manuel,145.55383
 Lollipop Lust Kill,265.61261
 London Theatre Orchestra,163.65669
-Lonestar,263.49669
+Lonestar,245.7073
 Long Beach Dub Allstars,282.61832
 Long John Hunter,117.83791
 Lonnie Brooks,351.73832
@@ -2400,7 +2329,6 @@ Los Abuelos De La Nada,194.01098
 Los Amigos Invisibles,420.62322
 Los AutΘnticos Decadentes,223.97342
 Los Bar≤n De Apodaca,213.7073
-Los Brujos,36.54485
 Los Chichos,242.80771
 Los Chunguitos,215.32689
 Los Cisnes,182.72608
@@ -2438,7 +2366,7 @@ Lou Busch,147.30404
 Lou Reed,211.66975
 Lou Reid & Carolina,145.94567
 Loudermilk,272.03873
-Loudon Wainwright III,190.48444
+Loudon Wainwright III,152.13669
 Louie Ramirez,174.10567
 Louis Prima & Keely Smith,239.51628
 Louis Prima And Keely Smith,171.4673
@@ -2453,7 +2381,6 @@ Luciano,215.53587
 Luis Alberto Spinetta,355.29098
 Luisito Rosario,302.602
 Luiz Bonfa,305.65832
-Luiz Bonfa / Oscar Castro Neves / Lalo Schifrin,186.67057
 Luke Bryan,192.44363
 Luke Vibert,420.15302
 Luna Orbit Project,335.51628
@@ -2478,21 +2405,21 @@ MIMS,258.92526
 MIMS Featuring J. Holiday,225.51465
 MN,378.06975
 MU330,132.44036
-Ma Rainey,188.94322
+Ma Rainey,183.53587
 Ma Rainey & Her Tub Jug Washboard Band,181.86404
 Mac Dre,256.83546
 Mac McAnally,183.53587
 Mack and Jamie,66.42893
 Mad Are Sane_ The,228.8322
 Maddox Brothers and Rose,145.162
-Mademoiselle Sane,217.62567
+Mademoiselle Sane,173.13914
 Madilu System,451.44771
 Madonna,564.94975
 Mae West,174.49751
 Magic Systeme,287.34649
 Magnatune Compilation,184.76363
 Mago de Oz,380.682
-Maire Brennan,248.34567
+Maire Brennan,184.34567
 Major Lance,141.42649
 Major Lazer,352.02567
 Major Lazer / Vybz Kartel / Afrojack,187.0624
@@ -2513,7 +2440,7 @@ Maracaibo 15,171.98975
 Marc Broussard,222.22322
 Marc Dorsey,301.50485
 Marc Et Claude,361.01179
-Marc Lavoine,224.39138
+Marc Lavoine,203.15383
 Marc Perrone,202.23955
 Marc Shaiman,165.72036
 Marcel Azzola,323.39546
@@ -2532,13 +2459,9 @@ Margaret Smith,46.86322
 Maria & Margot Hellwig/Die Garmischer AlpenjΣger,202.52689
 Maria & Margot Hellwig/Thomas Lehrberger,192.78322
 Maria Bamford,127.16363
-Maria Callas/Eugenio Fernandi/Elisabeth Schwarzkopf/Giuseppe Nessi/Nicola Zaccaria/Mario Borriello/Renato Ercolani/Piero de Palma/Giulio Mauri/Elisabetta Fusco/Pinuccia Perotti/Coro del Teatro alla Scala_ Milano/Orchestra del Teatro alla Scala_ Milano/Tul,172.90404
-Maria Callas/Gianni Raimondi/Gabriella Carturan/Plinio Clabassi/Nicola Rossi-Lemeni/Coro del Teatro alla Scala_ Milano/Noberto Mola/Orchestra del Teatro alla Scala_ Milano/Gianandrea Gavazzeni,102.68689
-Maria Callas/Giuseppe di Stefano/Ettore Bastianini/Silvana Zanolli/Luisa Mandelli/Giuseppe Zampieri/Arturo La Porta/Antonio Zerbini/Silvio Maionica/Coro e Orchestra del Teatro alla Scala_ Milano/Carlo Maria Giulini,112.14322
 Maria Callas/Giuseppe di Stefano/Orchestra del Teatro alla Scala_ Milano/Gianandrea Gavazzeni,233.40363
 Maria Forde,325.79873
 Maria Muldaur,411.01016
-Mariachi Silvestre Vargas,186.09587
 Mariah Carey,652.40771
 Mariah Carey Featuring Da Brat & JD,314.122
 Mariano Yanani,239.22893
@@ -2551,7 +2474,6 @@ Mario Piu,430.54975
 Mario Piu',355.39546
 Mario Rosenstock,361.82159
 Mario Telles,212.13995
-Marion Harris,163.39546
 Marisela,232.14975
 Mark Ashley,198.19057
 Mark Feldman_ John Taylor_ Anders Jormin_ Tom Rainey,527.82975
@@ -2561,7 +2483,6 @@ Markscheider Kunst,239.0722
 Markus,189.36118
 Marlene Dietrich,190.04036
 Maroon 5,270.70649
-Marquez the Greatest,72.17587
 Mars Ill,287.55546
 Marshall Crenshaw,244.76689
 Mart'nßlia,242.59873
@@ -2593,7 +2514,7 @@ Matisyahu,417.67138
 Matt Redman,336.92689
 Matteo Bonfanti e i maledetti,159.242
 Mau Mau,745.40363
-Maurane,263.67955
+Maurane,172.17261
 Maurane / Lara Fabian,198.86975
 Maurice Chevalier,214.5171
 Maurice Chevalier / Franτoise Dorin / Marina Hottine / Suzanne Gabriello / Jo Charrier / Marcel Carpentier / Perrette Souplex / Andree Grandjean / Cadet Rivers / Raymond Girerd / Orchestre De Jacques-Henri Rys / Jacques Henri Rys,213.55057
@@ -2601,7 +2522,7 @@ Maurice Larcange,276.53179
 Mavado,255.16363
 Mawatari Matsuko,253.77914
 Max Melvin,262.79138
-Max Stalling,167.65342
+Max Stalling,43.85914
 Max Steiner,163.39546
 Maxi Priest,301.81832
 Maximilian Hecker,370.02404
@@ -2609,13 +2530,12 @@ Mayday,307.33016
 Maysa,313.93914
 Mazz,251.61098
 Megadrums,342.88281
-Mei Chi Chiang,73.03791
 Meiway,288.62649
 Mel Blanc,912.97914
 Melanie And The Secret Army,255.58159
 Melatonin,233.11628
 Melissa Auf der Maur,232.6722
-Melt Banana,51.61751
+Melt Banana,27.89832
 Melvins,217.80853
 Memphis Jug Band,187.53261
 Memphis La Blusera,338.12853
@@ -2654,10 +2574,10 @@ Mick Hucknall,406.93506
 Mick Moloney,204.95628
 Mickey And The Students,914.02404
 Midge Ure,287.52934
-Midge Ure,287.52934
 Midnight Fish,300.82567
 Midwest Product,301.73995
 Mighty Diamonds,256.7571
+Mighty Joe Young,253.51791
 Mighty Joe Young,253.51791
 Mighty Mighty Bosstones,211.33016
 Migraine,110.75873
@@ -2686,7 +2606,7 @@ Minipop,163.00363
 Ministry of Sound,1686.7522
 MinistΦre des Affaires Populaires,140.12036
 Mink DeVille,173.92281
-Minnie Riperton,224.67873
+Minnie Riperton,212.13995
 Mint Condition,293.66812
 Miossec,225.90649
 Mira,277.99465
@@ -2698,7 +2618,7 @@ Mish Mash,254.32771
 Mississippi Fred McDowell,226.37669
 Mississippi John Hurt,271.22893
 Mississippi Mass Choir,333.5571
-Missy Higgins,267.65016
+Missy Higgins,255.34649
 Mista,259.3171
 Mister Ries,191.7122
 Mister Ries featuring Six Foe,193.82812
@@ -2722,14 +2642,12 @@ Mongo Santamaria,428.06812
 Mongo Santamaria Orchestra,203.25832
 Monika_ Wolfgang,178.78159
 Monique Marvez,639.60771
-Monique Morelli,196.44036
+Monique Morelli,136.07138
 Monomonkey,222.30159
 Mons Leidvin Takle,287.26812
 Monster Magnet,289.12281
-Montrose,197.51138
 Montserrat CaballΘ,198.13832
 Montserrat CaballΘ/Orchestra of the Royal Opera House_ Covent Garden/Carlo Maria Giulini,168.56771
-Montserrat CaballΘ/Royal Philharmonic Orchestra/Lamberto Gardelli,498.80771
 Montserrat CaballΘ;Eugenio  Marco,254.1971
 Montserrat CaballΘ;Placido Domingo;Vicente Sardinero;Judith Blegen;Sherrill Milnes;Georg Solti,511.16363
 Monty,195.60444
@@ -2785,7 +2703,6 @@ My Little Airport,125.70077
 MyKungFu,209.57995
 Mychael Danna & Jeff Danna,244.55791
 Mykill Miers,263.3922
-Mylon LeFevre,146.9122
 Myrick Freeze Guillory,300.82567
 Mystery,216.73751
 Mystic Revelation of Rastafari,250.90567
@@ -2797,7 +2714,7 @@ Mσnegarm,264.6722
 M≤veis Coloniais de Acaju,320.05179
 M÷tley Crⁿe,260.04853
 M·m,249.05098
-N.E.R.D.,222.6673
+N.E.R.D.,221.54404
 N.W.A.,183.14404
 NAZCA PERU,159.45098
 NG3,240.50893
@@ -2840,16 +2757,14 @@ Neviss,169.66485
 New Direction,265.24689
 New Found Glory,208.27383
 New Order,421.95546
-New Roanoke Jug Band,216.81587
+New Roanoke Jug Band,189.59628
 New York Dolls,354.01098
 NewFound Road,176.56118
 Nic Endo,388.0224
-Nicho Hinojosa,188.36853
+Nicho Hinojosa,183.17016
 Nicholas,152.68526
-Nicholas Hooper,214.90893
 Nichols,214.46485
 Nick Cave & The Bad Seeds,382.01424
-Nick Colionne,215.14404
 Nick Conolly,307.51302
 Nick Ingman,186.61832
 Nick Ingman;Gavyn Wright,120.94649
@@ -2878,7 +2793,7 @@ Niraj Chag,293.40689
 Nirvana,1061.79873
 No Address,286.4322
 Noah Lewis,169.74322
-Noel Harrison,166.73914
+Noel Harrison,157.09995
 Noemi,226.37669
 Noemφ,178.23302
 Noisettes,218.46159
@@ -2887,7 +2802,6 @@ Non Phixion,222.56281
 Non Stop DJs,237.92281
 Nora,198.63465
 Norman Howard,417.48853
-Norrie Paramor,163.49995
 North Mississippi Allstars,219.0624
 Norther,122.72281
 Northern State,208.09098
@@ -2896,7 +2810,6 @@ Novaspace,389.61587
 Novembre,313.3122
 Novika,268.90404
 Nu Flavor,242.38975
-Nybbl,232.202
 O'2L,290.08934
 OV7,239.67302
 Oak Ridge Boys,192.05179
@@ -2906,7 +2819,6 @@ Oceansize,249.93914
 Ocho y Media,278.17751
 Oesch's die Dritten,227.05587
 Off Broadway,244.87138
-Oh No,110.57587
 Ol' Dirty Bastard,181.62893
 Old Man's Child,317.12608
 Old Soul,85.99465
@@ -2921,7 +2833,6 @@ Olivier Messiaen,647.60118
 Olov Johansson_ Catriona Mckay,469.68118
 Omni,479.9473
 One Be Lo,164.85832
-One Block Radius,236.72118
 Onesidezero,281.12934
 Onyx,317.46567
 Opals,152.58077
@@ -2946,7 +2857,6 @@ Orquesta Harlow,281.59955
 Orquesta Romantica de La Habana,200.75057
 Orquesta Sublime,222.14485
 Orquestra,87.58812
-Orthrelm,70.03383
 Os Gaiteiros de Soutelo,152.94649
 Oscar Castro-Neves,197.38077
 Oscar Lima,230.3473
@@ -2954,8 +2864,6 @@ Oscar Peterson Trio,185.70404
 Oscar Pettiford,151.92771
 Otis Spann,318.22322
 Otis Taylor,301.87057
-Oui Oui,174.15791
-Our Time Down Here,75.49342
 Out Of The Grey,252.62975
 OutKast,366.39302
 OutKast featuring George Clinton,311.30077
@@ -3019,7 +2927,7 @@ Patton Oswalt,338.05016
 Patty Griffin,256.39138
 Paul Avgerinos,423.60118
 Paul Brown,243.90485
-Paul Buckmaster,123.76771
+Paul Buckmaster,73.50812
 Paul Cantelon,210.54649
 Paul Carrack,374.96118
 Paul Geremia,204.56444
@@ -3066,7 +2974,7 @@ Peret,286.17098
 Perez Prado_ His Orchestra,143.41179
 Perfection,379.27138
 Perpetual Loop,386.97751
-Perrey And Kingsley,137.19465
+Perrey And Kingsley,127.9473
 Perrocker,304.1171
 Pery Ribeiro,270.34077
 Pescado Rabioso,579.44771
@@ -3151,7 +3059,7 @@ Pumpkin Buzzard,271.49016
 Punk'd Royal,276.37506
 Pursuit Of Happiness,245.10649
 Pyranja,317.09995
-Pyrolator,180.24444
+Pyrolator,167.28771
 QBO,189.6224
 Quadro Nuevo,272.92689
 Queens Of The Stone Age,288.41751
@@ -3213,7 +3121,6 @@ Ray Pillow,129.12281
 Ray Price,125.1522
 Ray Sandoval,415.99955
 Ray Vega,237.06077
-Raymond LefΦvre,114.99057
 Raze,938.00444
 Rea_ Chris,366.28853
 Reach 454,237.19138
@@ -3256,9 +3163,8 @@ Richard Galliano,549.38077
 Richard Galliano_ Jean-Charles Capon_ Gilles Perrin,347.6371
 Richard Hawley And Death Ramps_ Arctic Monkeys,139.78077
 Richard Hell & The Voidoids,494.10567
-Richard Lloyd,172.77342
 Richard Smith,277.002
-Richard Souther,283.27138
+Richard Souther,273.05751
 Richard Walters,193.93261
 Richi M.,590.00118
 Richie McDonald,290.69016
@@ -3270,7 +3176,7 @@ Rick Snel,465.99791
 Rickie Lee Jones,331.36281
 Ricky Martin,336.19546
 Ricky Martin Feat. La Mari de Chambao,247.87546
-Righteous Brothers,190.14485
+Righteous Brothers,188.55138
 Rihanna,283.8722
 Rikk Agnew,269.40036
 Rincon Morales,197.0673
@@ -3293,7 +3199,6 @@ Robin Frederick,272.01261
 Rocio Jurado,359.65342
 Rockabye Baby!,312.78975
 Rocker-T,321.30567
-Rocket From The Tombs,138.44853
 Rockin' Dopsie_ Jr.,205.71383
 Rockin' Dopsie_ Jr._ The Zydeco Twisters,259.39546
 Rockit,219.66322
@@ -3313,8 +3218,8 @@ Roger Subirana,288.07791
 Roger Williams,201.74322
 Roj,65.95873
 Rokia TraorΘ,340.50567
-Rolfe Kent,112.16934
-Ron Goodwin,185.46893
+Rolfe Kent,100.30975
+Ron Goodwin,99.97016
 Roni Size,397.08689
 Ronnie Drew,195.00363
 Ronnie Milsap,281.52118
@@ -3325,14 +3230,13 @@ Rooney,199.28771
 Rory Block,266.05669
 Ross,68.49261
 Roy Brown,276.97587
-Roy Buchanan,365.71383
+Roy Buchanan,329.66485
 Roy Carrier,220.1073
 Roy Drusky,192.10404
 Roy Roberts,189.93587
 Roy Rogers,185.0771
 Royal Bubble Orchestra,184.81587
 Royal S,285.98812
-Ruben Cossani,10.68363
 Ruby Isle,277.73342
 Rubyhorse,266.03057
 Rude Boys,289.95873
@@ -3347,7 +3251,6 @@ Russell Malone,286.6673
 Rusted Shut,296.80281
 Rustless,119.53587
 RyanDan,255.76444
-S. Solis y Orquesta,182.20363
 S.U.P,384.70485
 SAF,317.54404
 SANSHIRO,272.95302
@@ -3368,7 +3271,6 @@ Sabda Brahma,349.51791
 Sade,298.89261
 Saga,294.73914
 Saigon Kick,368.1171
-Sal Mineo,149.9424
 Salieri,238.81098
 Salt The Wound,241.162
 Salt-N-Pepa,207.62077
@@ -3378,8 +3280,7 @@ Sam Fan Thomas,433.42322
 Saman,339.06893
 Samba Enredo,202.05669
 Samba Mapangala and Orchestra Virunga,301.66159
-Samba Trio,121.10322
-Sammi Cheng,295.57506
+Sammi Cheng,294.47791
 Samy Deluxe,282.38322
 Sandi Thom,425.19465
 Sandra Mihanovich,263.18322
@@ -3413,24 +3314,20 @@ Scott Wesley Brown,350.11873
 Screamin' Jay Hawkins,301.13914
 Screaming Jay Hawkins,128.96608
 Screaming Lord Sutch,231.44444
-Scweez,204.32934
 Seal,828.05506
 Seamus Egan,277.18485
-Sean Callery,212.84526
 Sean Kingston,184.58077
 Sean Paul,245.34159
 Sean Quinn,217.52118
 Seatrain,294.47791
 Seguridad Social,378.04363
 Selena,388.51873
-Semisonic,280.00608
+Semisonic,258.92526
 Semprini,517.0673
-Sensations,165.19791
 Serge Desaunay,127.76444
 Sergio Dalma,279.24853
 Sergio Franchi,203.72853
 Sergio Mendes,322.11546
-Sergio Mendes / Black Eyed Peas,267.20608
 Serpentine,285.70077
 Session Americana,210.31138
 Set Your Goals,204.40771
@@ -3461,9 +3358,7 @@ Sharon Shannon_ Carol Keogh,199.88853
 Shawn Colvin,290.11546
 Shay Torrent,114.65098
 She Satellites,149.36771
-Sheek Louch,64.65261
 Sheila Walsh,332.01587
-Shelby Flint,121.25995
 Shelby Lynne,290.97751
 Shelley Fabares,143.0722
 Shelly Manne,255.39873
@@ -3493,9 +3388,8 @@ Sin Plomo,496.63955
 Sin Plomo feat. Boris G.,299.72853
 Since The Flood,194.92526
 Sinch,300.72118
-Singing Melody,251.11465
+Singing Melody,235.7024
 Singing Melody Feat. Robyn,213.31546
-Siouxsie,234.55302
 Sir Douglas Quintet,193.59302
 Sir Neville Marriner,315.27138
 Sirka Ragnar,177.94567
@@ -3508,8 +3402,8 @@ Sivuca & Clπ Brasil,234.16118
 Six Brown Brothers,257.95873
 Sizzla,274.15465
 Skeeter Davis,168.48934
-Skeeter Davis,168.48934
 Skeletonwitch,252.08118
+Skeletonwitch,173.37424
 Skrape,198.81751
 Skyforger,252.81261
 Slackbaba,488.25424
@@ -3555,7 +3449,7 @@ Sonny Terry / Brownie McGhee,383.16363
 Sonora Carruseles,297.79546
 Sonora Santanera,177.47546
 Sophie B. Hawkins,316.76036
-Sophie Tucker,180.6624
+Sophie Tucker,154.74893
 Soul Asylum,279.2224
 Soul Ballet,462.07955
 Soul Embraced,248.81587
@@ -3573,7 +3467,6 @@ Spade Cooley,181.31546
 Speaker,188.29016
 Special Duties,162.87302
 Spectra Soul,303.51628
-Speech,160.93995
 Speedball,212.21832
 Spieluhrmelodien,131.94404
 Spinal Tap,235.41506
@@ -3596,7 +3489,6 @@ Stargarden,423.70567
 Starless & Bible Black,189.43955
 Stars Like Fleas,264.51546
 Starski and Clutch,290.95138
-State of Chaos,176.90077
 Static-X,268.06812
 Statues,211.01669
 Steel Pulse,266.05669
@@ -3611,12 +3503,11 @@ Stephan Micus,1204.29669
 Stephen Marley,270.05342
 Stephen Marley / Damian Marley,273.89342
 Stephen Pearcy,216.63302
-Stephen Warbeck,123.68934
 Stephy Tang,214.12526
 Stern,283.27138
 Steve Azar,274.46812
 Steve Chou,323.23873
-Steve Erquiaga,225.33179
+Steve Erquiaga,220.70812
 Steve Green,211.722
 Steve Harvey,268.45995
 Steve Morse,363.85914
@@ -3653,8 +3544,7 @@ Suburbs,187.24526
 Sue Foley,224.65261
 Sugar Minott,290.35057
 Sugar Ray,161.82812
-Sugarbomb,260.93669
-Sugarman Three,200.35873
+Sugarbomb,219.74159
 Sui Generis,335.33342
 Suicidal Tendencies,312.55465
 Suicide,394.73587
@@ -3669,9 +3559,7 @@ Sunidhi Chauhan / Anu Malik / Jatin Sharma,319.32036
 Sunnyland Slim,344.71138
 Sunscreem,590.15791
 Super Cat,229.66812
-Super700,47.28118
 Superchumbo,673.2273
-Supertalented,96.65261
 Susana Seivane,350.71955
 Suzanne Ciani,239.59465
 Suzi Quatro,301.21751
@@ -3695,7 +3583,6 @@ System of a Down,217.59955
 SΘamus Egan,276.16608
 SΘamus Ennis,249.73016
 SΘbastien Roch,184.08444
-T Lavitz,46.00118
 T-Bone,248.45016
 T-Bone Walker,174.96771
 T-la Rock,151.61424
@@ -3770,7 +3657,6 @@ The Advantage,99.00363
 The Aftermath,118.30812
 The All American Rejects,195.18649
 The All-American Rejects,279.71873
-The Allies,213.13261
 The Almost,240.79628
 The American Boychoir,329.03791
 The Animals_ Sonny Boy Williamson,463.49016
@@ -3803,7 +3689,7 @@ The Cannanes,188.31628
 The Capitol Years,242.02404
 The Cardigans,296.85506
 The Cars,234.50077
-The Cat's Miaow,137.29914
+The Cat's Miaow,125.25669
 The Cate Brothers,330.63138
 The Chap,216.2673
 The Charms,163.99628
@@ -3820,12 +3706,11 @@ The Clark Sisters,416.70485
 The Clash,308.50567
 The Cliks,199.78404
 The Color Red,216.05832
-The Continentals,179.06893
+The Continentals,164.12689
 The Cortinas,219.01016
 The Cosmosamatics,515.97016
 The Creation,250.27873
 The Crystal Method,357.642
-The Cufflinks,167.00036
 The Cure,250.85342
 The Cutting Edge,481.07057
 The Dee Jays,195.10812
@@ -3848,7 +3733,6 @@ The Exciters,194.53342
 The Exies,201.87383
 The Fabulous Thunderbirds,342.20363
 The Family Stand,413.54404
-The Fever,194.45506
 The Field Mice,335.46404
 The Fire Theft,223.37261
 The Firesign Theatre,108.25098
@@ -3859,7 +3743,7 @@ The Florida Boys,210.88608
 The Fontane Sisters,149.99465
 The Fool'S Nose,202.00444
 The Forms,208.14322
-The Four Pennies,156.57751
+The Four Pennies,144.14322
 The Frantic,146.15465
 The Fray,240.56118
 The Freedom,257.82812
@@ -3875,13 +3759,11 @@ The Gathering,363.31057
 The Gentle Good,400.48281
 The Germs,206.05342
 The Ghost Of Lemora,208.69179
-The Glencastle Sound,3.5522
 The Golden Age Orchestra_ Paul Summer,168.75057
 The Gone Jackals,248.18893
 The Grease Band,325.25016
 The Grip Weeds,314.14812
 The Gufs,232.98567
-The Harvard Lampoon Comedians,77.21751
 The Harvey Averne Dozen,166.81751
 The High Strung,187.27138
 The Highwaymen,282.33098
@@ -3911,10 +3793,8 @@ The Jordanaires,239.35955
 The Jordanaires & Orion,97.69751
 The Katies,216.29342
 The Katinas,159.26812
-The Keys,143.01995
 The Killers,527.98649
 The King Sisters,195.89179
-The King Sisters & Alvino Rey,163.97016
 The Kings,191.21587
 The Kirkbys,154.3571
 The Kitchen,213.10649
@@ -3947,11 +3827,10 @@ The Moody Blues,291.29098
 The Motors,393.61261
 The Mustangs,174.57587
 The Mystic Moods Orchestra,207.09832
-The Nelons,237.03465
+The Nelons,236.5122
 The New York Dolls,344.45016
 The Nightraver & The Magican,233.53424
 The Notorious B.I.G.,316.65587
-The Oak Ridge Boys,154.8273
 The Ocean,285.90975
 The Oh Sees,162.37669
 The Panic Channel,227.99628
@@ -3965,7 +3844,6 @@ The Pineapple Thief,399.82975
 The Plasmatics,286.9024
 The Plimsouls,192.13016
 The Police,318.01424
-The Prefects,266.57914
 The Presets,351.32036
 The Primitives,172.93016
 The Prodigy,312.86812
@@ -3973,7 +3851,6 @@ The Products,117.2371
 The Race,225.17506
 The Raconteurs,230.5824
 The Radio Department,248.24118
-The Radio Dept,207.20281
 The Radio Dept.,256.02567
 The Rambos,226.2722
 The Rance Allen Group,337.162
@@ -3983,7 +3860,6 @@ The Real Kids,263.75791
 The Red Jumpsuit Apparatus,208.79628
 The Red Telephone,273.55383
 The Refreshments,239.41179
-The Reverend Peyton's Big Damn Band,179.46077
 The Revolutionary Ensemble,1253.92934
 The Robert Cray Band,384.522
 The Roches,338.33751
@@ -4005,11 +3881,9 @@ The Shangri-Las,164.80608
 The Shirelles,159.76444
 The Shirrows,361.9522
 The Skabs,121.65179
-The Small Knives,208.16934
 The Smashing Pumpkins,399.98649
 The Sonics,171.15383
 The Sonics_ Charlie & The Tunas,243.1473
-The Starting Line,264.41098
 The Statler Brothers,201.27302
 The Steeles,261.04118
 The Stems,200.51546
@@ -4021,8 +3895,7 @@ The Strokes,191.29424
 The Sugarhill Gang,451.02975
 The Suicide Machines,170.84036
 The Summer Obsession,282.04363
-The Sun Harbor's Chorus-Documentary Recordings,206.91546
-The Tall Grass,273.73669
+The Sun Harbor's Chorus-Documentary Recordings,137.84771
 The Tamperer,333.42649
 The Tarriers,246.49098
 The Temper Trap,232.75057
@@ -4037,7 +3910,7 @@ The Velvet Underground,276.68853
 The Verve Pipe,292.8322
 The Villas,179.48689
 The Waybacks,288.49587
-The Weegs,192.20853
+The Weegs,177.18812
 The Wes Montgomery Trio,246.80444
 The White Stripes,274.59873
 The Who,271.69914
@@ -4064,7 +3937,6 @@ Thrice,349.80526
 Thrilla U,226.95138
 Thriller U,235.12771
 Through the Eyes of the Dead,41.482
-Throw The Fight,23.87546
 ThΘophil,305.3971
 Tigerstyle,351.45098
 Tigertailz,309.18485
@@ -4108,7 +3980,7 @@ Tom Petty And The Heartbreakers,274.20689
 Tomash Gee,373.75955
 Tommy Castro,240.27383
 Tommy James & The Shondells,324.70159
-Tommy James And The Shondells,161.85424
+Tommy James And The Shondells,146.02404
 Tommy Makem;The Clancy Brothers,121.67791
 Tommy McLain,196.38812
 Tommy Overstreet,185.73016
@@ -4126,7 +3998,7 @@ Tony Joe White,332.32934
 Tony Malone And The Rapparees,267.85914
 Tony Martin,216.24118
 Tony Mathews,281.80853
-Tony Matterhorn,207.01995
+Tony Matterhorn,183.53587
 Tony Murena,155.14077
 Tony Tuff,229.58975
 Toots & The Maytals,169.53424
@@ -4167,7 +4039,6 @@ Twinkle Twinkle Little Rock Star,238.52363
 Twista,368.03873
 Twista & The Speedknot Mobstaz,377.86077
 Twista Featuring Cee-Lo,272.50893
-Two Man Advantage,50.83383
 Ty Herndon,217.15546
 Ty Herndon;Stephanie Bentley,295.3922
 Tyree,399.93424
@@ -4181,7 +4052,6 @@ UK Subs,140.30322
 UKW,266.762
 US Coast Guard Band,207.93424
 Ultimate Fakebook,183.27465
-Ultimate Tracks,279.40526
 Ultra X,209.13587
 Ultraviolence,367.41179
 Ulytau,233.76934
@@ -4230,10 +4100,8 @@ Vince Guaraldi,270.75873
 Vince Guaraldi / Bola Sete,294.66077
 Vince Guaraldi Trio,242.9122
 Vince Taylor,200.04526
-Vincent Baguian,167.65342
 Vincent Bruley,920.76363
 Vincenzo,439.17016
-Vincenzo Bellini,244.61016
 Vinylbase,361.79546
 Vinφcius de Moraes,243.53914
 Virgil Moorefield,236.2771
@@ -4248,7 +4116,6 @@ Vodka Collins,249.96526
 Vonray,230.08608
 Vorstadtkinder,291.21261
 Vox Dei,456.69832
-Voyager Series,103.73179
 Vrse Murphy,240.5873
 Vulgar Pigeons,125.98812
 Vulture Industries,379.29751
@@ -4271,7 +4138,7 @@ Warner mack,160.20853
 Warrant,244.08771
 Warren Barfield,216.81587
 Warrior King,225.77587
-Washboard Sam,184.78975
+Washboard Sam,171.62404
 Way Out West,155.89832
 Wayne Kramer,248.52853
 Wayne Watson,304.19546
@@ -4288,14 +4155,12 @@ Wendy Moten,230.37342
 Wes King,233.45587
 Wesley Tuttle,175.22893
 Wet Wet Wet,257.25342
-When Dinosaurs Ruled The Earth,37.82485
 White Heart,301.81832
 White Willow,659.46077
 Whitesnake,252.08118
 Whitney Cummings,78.91546
 Who Made Who,480.96608
 Why?,190.14485
-Widespread Bloodshed,49.94567
 Wild Horses,338.28526
 Wilks,274.05016
 Wilks featuring doniki,255.00689
@@ -4308,7 +4173,7 @@ William Coulter,253.54404
 William Goldstein,276.50567
 William Orbit,339.80036
 Williamson,354.06322
-Willie Barcena,163.76118
+Willie Barcena,146.59873
 Willie Bobo,416.44363
 Willie Clancy,221.72689
 Willie Clayton,287.08526
@@ -4364,15 +4229,13 @@ Year Long Disaster,228.15302
 Year of Desolation,337.76281
 Yellowcard,208.79628
 Yiannis Tassios,208.1171
-Yndio,162.61179
 Yodi's,300.5122
 Yolandita Monge,214.49098
 You Should Go Ahead,234.78812
 Young-Holt Unlimited,266.05669
 Youves,235.20608
-Yuko Kanzaki,145.8673
 Yung Joc,193.64526
-Yuppie Pricks,168.6722
+Yuppie Pricks,161.38404
 Yuridia,265.92608
 Yvette,405.002
 Yvette Horner,162.19383
@@ -4394,7 +4257,6 @@ Zeromancer,362.31791
 Ziggy Marley And The Melody Makers,335.90812
 Zimbabwe Legit,235.91138
 Zombie Girl,273.34485
-ZombieSuckers,62.95465
 Zombina & The Skeletones,210.93832
 Zombina & The Skeletons,198.16444
 Zuma,735.60771
@@ -4407,7 +4269,6 @@ deadboy & the Elephantmen,275.46077
 fIREHOSE,201.22077
 iTAL tEK,293.09342
 impulsonic,395.49342
-lextrical,165.69424
 liquid soul & freq,402.62485
 themselves,274.1024
 unloco,362.34404
