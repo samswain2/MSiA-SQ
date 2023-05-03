@@ -26,9 +26,9 @@ if __name__ == '__main__':
     # Read input data from a file
     
     # Full music file
-    input = r"D:\Big Data\MSiA 431\02_hw\dataMusic10000.csv"
+    input = r"D:\Big Data\MSiA 431\02_hw\dataMusic10000.csv" # Runs in about 17 minutes
     # Sample music file
-    # input = r"C:\Users\nuke2\Desktop\NW Work\Spring Work\MSiA-SQ\Data\MSiA 431\02_hw\music_sample.csv"
+    # input = r"C:\Users\nuke2\Desktop\NW Work\Spring Work\MSiA-SQ\Data\MSiA 431\02_hw\music_sample.csv" # Runs instantly
 
     with open(input, 'r', encoding='utf-8') as input_file:
         # Create a pool of processes for the mappers
