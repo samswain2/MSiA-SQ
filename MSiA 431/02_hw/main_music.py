@@ -39,7 +39,7 @@ if __name__ == '__main__':
                 map_results = pool.map(mapper_music, [lines])
                 all_lines.extend([line for chunk in map_results for line in chunk])
 
-    # Apply shuffle_and_sort to the mapper output
+    # Apply shuffler_music to the mapper output
     sorted_lines = shuffler_music(all_lines)
 
     # Split the sorted lines into 5 equal-sized chunks for reducers
