@@ -32,7 +32,7 @@ if __name__ == '__main__':
     # input = r"C:\Users\nuke2\Desktop\NW Work\Spring Work\MSiA-SQ\Data\MSiA 431\02_hw\music_sample.csv" # Runs instantly
 
     # Laptop
-    input = r"C:\Users\Sam\Desktop\NW Work\Spring Work\MSiA-SQ\Data\MSiA 431\02_hw\music_sample.csv"
+    input = r"C:\Users\Sam\Desktop\NW Work\Spring Work\MSiA-SQ\Data\MSiA 431\02_hw\dataMusic10000.csv"
 
     with open(input, 'r', encoding='utf-8') as input_file:
         # Create a pool of processes for the mappers
@@ -75,7 +75,15 @@ if __name__ == '__main__':
         # Apply the reducer function to each chunk
         reduce_results = list(tqdm(pool.imap(reducer_music, reducer_chunks), total=num_reducers))
 
-    # Concatenate the reducer results and print them
+    # Concatenate the reducer results
     final_results = [result for chunk in reduce_results for result in chunk]
+
+    # Sort the final results based on the artist name (key)
+    final_results.sort(key=lambda x: x[0])
+
+    # Apply reducer_music to the sorted final results to remove duplicates and keep the max duration
+    final_results = reducer_music(final_results)
+
+    # Print the final results
     for artist, max_duration in final_results:
         print(f"{artist},{max_duration}")
