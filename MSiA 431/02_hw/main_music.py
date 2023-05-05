@@ -19,16 +19,20 @@ def read_in_chunks(file, chunk_size):
 
 if __name__ == '__main__':
     # Define the number of map processes and reduce processes
-    num_mappers = 20
-    num_reducers = 5
+    num_mappers = 1
+    num_reducers = 1
     chunk_size = 2500000  # Modify this value based on your system's memory capacity
 
     # Read input data from a file
     
     # Full music file
-    input = r"D:\Big Data\MSiA 431\02_hw\dataMusic10000.csv" # Runs in about 17 minutes
+    # input = r"D:\Big Data\MSiA 431\02_hw\dataMusic10000.csv" # Runs in about 17 minutes
+
     # Sample music file
     # input = r"C:\Users\nuke2\Desktop\NW Work\Spring Work\MSiA-SQ\Data\MSiA 431\02_hw\music_sample.csv" # Runs instantly
+
+    # Henry's test
+    input = r"D:\Downloads\split_0.csv"
 
     with open(input, 'r', encoding='utf-8') as input_file:
         # Create a pool of processes for the mappers
