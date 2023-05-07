@@ -12,15 +12,10 @@ import os
 def count_files(files):
     return len(files)
 
-def total_file_size_and_lines(files):
-    total_size = 0
-    total_lines = 0
+def read_in_files(files):
     for file in files:
         with open(file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-            total_lines += len(lines)
-            total_size += sum(len(line.encode('utf-8')) for line in lines)
-    return total_size, total_lines
+            yield f.readlines()
 
 def read_in_chunks(files, chunk_size):
     for file in files:
@@ -67,17 +62,13 @@ if __name__ == '__main__':
     input_files = glob.glob(r"D:\Big Data\MSiA 431\02_hw\split_music_full\*")  # Replace with the path to the folder containing the split files
 
     all_lines = []
-    total_size, total_lines = total_file_size_and_lines(input_files)
-    avg_line_length = total_size / total_lines
-    estimated_chunks = (total_size // (chunk_size * avg_line_length)) + 1
+    num_files = count_files(input_files)
     with multiprocessing.Pool(num_mappers) as pool:
-        for lines in tqdm(read_in_chunks(input_files, chunk_size),
-                          total=estimated_chunks,
-                          desc="Processing chunks",
-                          position=0,
-                          bar_format="{l_bar}{bar:30}{r_bar}{bar:-10b}"):
-            map_results = pool.map(mapper_music, [lines])
-            all_lines.extend([line for chunk in map_results for line in chunk])
+        with tqdm(total=len(input_files), desc="Mapping files", bar_format="{l_bar}{bar:30}{r_bar}{bar:-10b}") as progress_bar:
+            for lines in read_in_chunks(input_files, chunk_size):
+                map_results = pool.map(mapper_music, [lines])
+                all_lines.extend([line for chunk in map_results for line in chunk])
+                progress_bar.update(1)
 
     sorted_lines = shuffler_music(all_lines)
 
