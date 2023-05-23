@@ -1,4 +1,4 @@
  spark-submit \
 --master yarn \
 --deploy-mode client \
-titanic_ml_example.py
+03_hw_q1.py
