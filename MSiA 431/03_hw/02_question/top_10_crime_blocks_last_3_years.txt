@@ -1,0 +1,10 @@
+Block: 001XX N STATE ST, Number of Crimes: 231
+Block: 0000X W TERMINAL ST, Number of Crimes: 96
+Block: 008XX N MICHIGAN AVE, Number of Crimes: 90
+Block: 064XX S DR MARTIN LUTHER KING JR DR, Number of Crimes: 75
+Block: 076XX S CICERO AVE, Number of Crimes: 69
+Block: 0000X W 79TH ST, Number of Crimes: 67
+Block: 0000X S STATE ST, Number of Crimes: 66
+Block: 100XX W OHARE ST, Number of Crimes: 66
+Block: 025XX W CERMAK RD, Number of Crimes: 64
+Block: 083XX S STEWART AVE, Number of Crimes: 61

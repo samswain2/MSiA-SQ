@@ -1,0 +1,2 @@
+Number of crime events during Mayor Daly's term: 4569739
+Number of crime events during Mayor Emanuel's term: 2311589
