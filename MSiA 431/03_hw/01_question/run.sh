@@ -1,4 +1,3 @@
- spark-submit \
---master yarn \
---deploy-mode client \
-03_hw_q1.py
+#!/bin/bash
+
+spark-submit --master yarn --deploy-mode client swain_01_question.py
