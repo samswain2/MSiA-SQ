@@ -1,6 +1,7 @@
 from pyspark import SparkContext, SparkConf
 from datetime import datetime
 from math import sqrt
+from scipy import stats
 
 conf = SparkConf().setAppName("Chicago Crime Data Analysis")
 sc = SparkContext(conf=conf)
@@ -17,43 +18,65 @@ crimeData = crimeData.filter(lambda line: line != header)
 def parse(line):
     fields = line.split(',')
     date = datetime.strptime(fields[2], '%m/%d/%Y %I:%M:%S %p')
-    block = fields[3]  # adjust field index according to your data
-    return (date, block)
+    district = fields[11]
+    return (district, date)
 
 # Parse the RDD
-crimeDataParsed = crimeData.map(lambda line: (line.split(',')[3], 1))
+crimeDataParsed = crimeData.map(parse)
 
 # Filter for the time during which each mayor was in office
 dalyCrimes = crimeDataParsed.filter(lambda x: datetime(1989, 4, 24) <= x[1] <= datetime(2011, 5, 16))
 emanuelCrimes = crimeDataParsed.filter(lambda x: datetime(2011, 5, 16) < x[1] <= datetime(2019, 5, 20))
 
+# Filter out non-numeric districts
+dalyCrimes = dalyCrimes.filter(lambda x: x[0].isdigit())
+emanuelCrimes = emanuelCrimes.filter(lambda x: x[0].isdigit())
+
+# Filter out districs out of the range 1 to 25s
+extra_districts = [13, 21, 23]
+dalyCrimes = dalyCrimes.filter(lambda x: 25 >= int(x[0]) >= 1 and int(x[0]) not in extra_districts)
+emanuelCrimes = emanuelCrimes.filter(lambda x: 25 >= int(x[0]) >= 1 and int(x[0]) not in extra_districts)
+
+# Set each observation with a value of 1
+dalyCrimes = dalyCrimes.map(lambda x: (x[0], 1))
+emanuelCrimes = emanuelCrimes.map(lambda x: (x[0], 1))
+
 # Calculate sum and count for each block during each mayor's term
 def seqOp(x, y):
-    return (x[0] + y, x[1] + y, x[2] + y*y)
+    return (x[0] + y, x[1] + 1)
 
 def combOp(x, y):
-    return (x[0] + y[0], x[1] + y[1], x[2] + y[2])
+    return (x[0] + y[0], x[1] + y[1])
 
-zeroValue = (0, 0.0, 0.0)
+zeroValue = (0, 0)
 
 dalyBlockStats = dalyCrimes.aggregateByKey(zeroValue, seqOp, combOp)
 emanuelBlockStats = emanuelCrimes.aggregateByKey(zeroValue, seqOp, combOp)
 
-# Calculate mean and standard deviation for each block during each mayor's term
-def calcStats(sum_count_sqcount):
-    count, sum, sqcount = sum_count_sqcount
-    mean = sum / count
-    std_dev = sqrt(sqcount / count - mean*mean)
-    return (mean, std_dev, count)
+# Calculate total crimes and total districts for each mayor's term
+totalCrimesDaly = dalyBlockStats.map(lambda x: x[1][0]).sum()
+totalDistrictsDaly = dalyBlockStats.count()
 
-dalyBlockStats = dalyBlockStats.mapValues(calcStats)
-emanuelBlockStats = emanuelBlockStats.mapValues(calcStats)
+totalCrimesEmanuel = emanuelBlockStats.map(lambda x: x[1][0]).sum()
+totalDistrictsEmanuel = emanuelBlockStats.count()
 
-# Save the statistics for each block during each mayor's term
-with open('daly_block_stats.txt', 'w') as f:
-    for key, value in dalyBlockStats.collect():
-        f.write(str(key) + ': ' + str(value) + '\n')
+# Calculate mean for each mayor's term
+meanDaly = totalCrimesDaly / totalDistrictsDaly
+meanEmanuel = totalCrimesEmanuel / totalDistrictsEmanuel
 
-with open('emanuel_block_stats.txt', 'w') as f:
-    for key, value in emanuelBlockStats.collect():
-        f.write(str(key) + ': ' + str(value) + '\n')
+# Calculate variance for each mayor's term
+varDaly = dalyBlockStats.map(lambda x: (x[1][0] - meanDaly) ** 2).sum() / totalDistrictsDaly
+varEmanuel = emanuelBlockStats.map(lambda x: (x[1][0] - meanEmanuel) ** 2).sum() / totalDistrictsEmanuel
+
+# Calculate standard deviation for each mayor's term
+sdDaly = sqrt(varDaly)
+sdEmanuel = sqrt(varEmanuel)
+
+# Calculate the t-statistic
+t = (meanDaly - meanEmanuel) / sqrt((sdDaly**2/totalDistrictsDaly) + (sdEmanuel**2/totalDistrictsEmanuel))
+
+# Save the mean, standard deviation, and t-statistic for each mayor's term
+with open('mean_sd_t_stat.txt', 'w') as f:
+    f.write(f"Mayor Daly (Districts): Mean = {meanDaly}, SD = {sdDaly}\n")
+    f.write(f"Mayor Emanuel (Districts): Mean = {meanEmanuel}, SD = {sdEmanuel}\n")
+    f.write(f"T-statistic for difference in means: {t}\n")

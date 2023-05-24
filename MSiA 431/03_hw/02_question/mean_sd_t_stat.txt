@@ -1,0 +1,3 @@
+Mayor Daly (Districts): Mean = 200016.63636363635, SD = 53346.78572113656
+Mayor Emanuel (Districts): Mean = 102230.13636363637, SD = 28278.28613698223
+T-statistic for difference in means: 7.596424891111538
