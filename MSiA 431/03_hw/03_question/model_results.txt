@@ -1,15 +1,15 @@
 Random Forest:
-RMSE: 4.134582705774006
-R-squared: 0.6990395584863167
-Mean Absolute Error (as proxy for MAPE): 2.718134366144839
+RMSE: 4.257213568815396
+R-squared: 0.6851836532875967
+Mean Absolute Error (as proxy for MAPE): 2.755454162481786
 
 Gradient-Boosted Tree:
-RMSE: 4.046313595773428
-R-squared: 0.711752782024067
-Mean Absolute Error (as proxy for MAPE): 2.644275305873084
+RMSE: 4.17932143311275
+R-squared: 0.6965983433538311
+Mean Absolute Error (as proxy for MAPE): 2.7059013683320385
 
 Linear Regression:
-RMSE: 3.989641583401545
-R-squared: 0.7197705260704728
-Mean Absolute Error (as proxy for MAPE): 2.649830926678473
+RMSE: 4.121218037519653
+R-squared: 0.7049758394100294
+Mean Absolute Error (as proxy for MAPE): 2.6912580790862752
 

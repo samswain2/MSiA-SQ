@@ -26,44 +26,69 @@ NON_VIOLENT_CRIMES = ["OBSCENITY", "OTHER OFFENSE", "GAMBLING", "CRIMINAL TRESPA
 
 # Start Spark session
 spark = SparkSession.builder.appName(APP_NAME).getOrCreate()
-spark.sparkContext.setLogLevel("ERROR")
+spark.sparkContext.setLogLevel("ERROR")  # Reduce console output
 
-# Load and process datasets
-crime_df = spark.read.csv(CRIMES_CSV, header=True)
-crime_df = crime_df.withColumn("Date", to_date(col("Date"), DATE_FORMAT))
+# Load and process the crime data
+df = spark.read.format("csv").option("header", "true").load(CRIMES_CSV)
+df = df.withColumn("Date", to_date(col("Date"), DATE_FORMAT))
 
-iucr_df = spark.read.csv(IUCR_CSV, header=True)
-iucr_df = iucr_df.withColumnRenamed("IUCR", "IUCR_other")
+# Load and process the IUCR data
+other_df = spark.read.format("csv").option("header", "true").load(IUCR_CSV)
+other_df = other_df.withColumnRenamed("IUCR", "IUCR_other")
 
-stock_df = spark.read.csv(STOCK_CSV, header=True)
+### --------------- LOAD AND PREPARE STOCK DATA --------------- ###
+
+# Load the stock data
+stock_df = spark.read.format("csv").option("header", "true").load(STOCK_CSV)
+
+# Convert the 'Date' column to date type and 'Close' column to float type
 stock_df = stock_df.withColumn("Date", to_date(col("Date"), 'yyyy-MM-dd'))
-stock_df = stock_df.withColumn("Close", col("Close").cast("float"))
+stock_df = stock_df.withColumn("Close", stock_df["Close"].cast("float"))
+
+# Add the week_of_year and year columns to the stock data
 stock_df = stock_df.withColumn("week_of_year", weekofyear(col("Date")))
 stock_df = stock_df.withColumn("year", year(col("Date")))
 
-# Compute average weekly closing price
-weekly_stock_df = stock_df.groupBy("year", "week_of_year").avg("Close")
+# Compute the average weekly closing price
+weekly_stock_df = stock_df.groupBy("year", "week_of_year").agg({"Close": "avg"})
+
+# Rename the aggregated column
 weekly_stock_df = weekly_stock_df.withColumnRenamed("avg(Close)", "avg_weekly_close")
-weekly_stock_df = weekly_stock_df.withColumn('avg_weekly_close_lag_1', lag('avg_weekly_close', 1).over(Window.orderBy('year', 'week_of_year')))
+
+# Define a window spec
+window_spec_stock = Window.orderBy('year', 'week_of_year')
+
+# Create lag feature for the average weekly closing price
+weekly_stock_df = weekly_stock_df.withColumn('avg_weekly_close_lag_1', lag('avg_weekly_close', 1).over(window_spec_stock))
+
+# Compute the weekly change in closing price
 weekly_stock_df = weekly_stock_df.withColumn('weekly_close_change', (col('avg_weekly_close') - col('avg_weekly_close_lag_1')) / col('avg_weekly_close_lag_1') * 100)
+
+# Fill any missing lagged values with 0 (or other value that makes sense in your case)
 weekly_stock_df = weekly_stock_df.na.fill(0)
 
-# Merge datasets and feature engineering
-joined_df = crime_df.join(iucr_df, crime_df.IUCR == iucr_df.IUCR_other, 'inner')
+### --------------- LOAD AND PREPARE STOCK DATA --------------- ###
+
+# Join the dataframes
+joined_df = df.join(other_df, df.IUCR == other_df.IUCR_other, 'inner')
 joined_df = joined_df.withColumn("week_of_year", weekofyear(col("Date")))
 joined_df = joined_df.withColumn("year", year(col("Date")))
+
+# Now, you can join the weekly stock data to the crime data
 joined_df = joined_df.join(weekly_stock_df, ['year', 'week_of_year'], 'inner')
 
+# Index beat column
 indexer = StringIndexer(inputCol="Beat", outputCol="BeatIndex")
 joined_df = indexer.fit(joined_df).transform(joined_df)
 
+# Categorize crimes
 joined_df = joined_df.withColumn("violent_crime", when(col("PRIMARY DESCRIPTION").isin(VIOLENT_CRIMES), 1).otherwise(0))
 joined_df = joined_df.withColumn("non_violent_crime", when(col("PRIMARY DESCRIPTION").isin(NON_VIOLENT_CRIMES), 1).otherwise(0))
 joined_df = joined_df.withColumn("Arrest", when(col("Arrest") == True, 1).otherwise(0))
 joined_df = joined_df.withColumn("Domestic", when(col("Domestic") == True, 1).otherwise(0))
 
-# Aggregate data
-aggregated_df = joined_df.groupBy("Beat", "BeatIndex", "year", "week_of_year", "avg_weekly_close", "weekly_close_change") \
+## Aggregate data
+aggregated_df = joined_df.groupBy("Beat", "BeatIndex", "year", "week_of_year", "avg_weekly_close", "weekly_close_change")\
     .agg(sql_sum(when(col("violent_crime") == lit(1), 1)).alias("total_violent_crimes"),
          sql_sum(when(col("non_violent_crime") == lit(1), 1)).alias("total_non_violent_crimes"),
          sql_sum(col("Arrest")).alias("total_arrests"),
@@ -75,14 +100,16 @@ aggregated_df = joined_df.groupBy("Beat", "BeatIndex", "year", "week_of_year", "
 
 aggregated_df = aggregated_df.withColumn("total_crimes", col("total_violent_crimes") + col("total_non_violent_crimes"))
 
-# Lag features and fill NA
+# Define a window spec
 window_spec = Window.partitionBy('Beat').orderBy('year', 'week_of_year')
 
+# Create lag features
 for num_weeks_lag in [1, 2, 3, 4]:
     aggregated_df = aggregated_df.withColumn(f'total_crimes_lag_{num_weeks_lag}', lag('total_crimes', num_weeks_lag).over(window_spec))
     aggregated_df = aggregated_df.withColumn(f'total_arrests_lag_{num_weeks_lag}', lag('total_arrests', num_weeks_lag).over(window_spec))
     aggregated_df = aggregated_df.withColumn(f'total_domestic_crimes_lag_{num_weeks_lag}', lag('total_domestic_crimes', num_weeks_lag).over(window_spec))
 
+# Fill any missing lagged values with 0 (or other value that makes sense in your case)
 aggregated_df = aggregated_df.na.fill(0)
 
 # Define columns to be used for training
