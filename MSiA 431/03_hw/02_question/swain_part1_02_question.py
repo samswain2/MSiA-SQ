@@ -21,11 +21,11 @@ def parse(line):
 # Parse the RDD
 crimeDataParsed = crimeData.map(parse)
 
-# Define the last date in the dataset
-lastDateInDataset = datetime.strptime('12/31/2019', '%m/%d/%Y')
+# Find the last date in the dataset
+lastDateInDataset = crimeDataParsed.map(lambda x: x[0]).max()
 
 # Filter for the last 3 years
-crimeDataLast3Years = crimeDataParsed.filter(lambda x: x[0].year >= lastDateInDataset.year - 4)
+crimeDataLast3Years = crimeDataParsed.filter(lambda x: x[0].year >= lastDateInDataset.year - 3)
 
 # Count the number of crimes per block
 blockCounts = crimeDataLast3Years.map(lambda x: (x[1], 1)).reduceByKey(lambda a, b: a + b)

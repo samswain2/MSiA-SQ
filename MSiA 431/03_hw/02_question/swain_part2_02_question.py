@@ -24,8 +24,10 @@ def parse(line):
 # Parse the RDD
 crimeDataParsed = crimeData.map(parse).filter(lambda x: x is not None)
 
+# Find the most recent date in the dataset
+most_recent_date = crimeDataParsed.map(lambda x: x[0]).max()
+
 # Filter for the last 5 years
-most_recent_date = datetime(2019, 12, 31)  # set the most recent date
 crimeDataLast5Years = crimeDataParsed.filter(lambda x: x[0].year >= most_recent_date.year - 5)
 
 # Create a set of all unique beats

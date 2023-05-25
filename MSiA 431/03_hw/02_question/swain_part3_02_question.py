@@ -73,10 +73,17 @@ sdDaly = sqrt(varDaly)
 sdEmanuel = sqrt(varEmanuel)
 
 # Calculate the t-statistic
-t = (meanDaly - meanEmanuel) / sqrt((sdDaly**2/totalDistrictsDaly) + (sdEmanuel**2/totalDistrictsEmanuel))
+t = abs((meanDaly - meanEmanuel) / sqrt((sdDaly**2/totalDistrictsDaly) + (sdEmanuel**2/totalDistrictsEmanuel)))
 
-# Save the mean, standard deviation, and t-statistic for each mayor's term
-with open('mean_sd_t_stat.txt', 'w') as f:
+# Calculate degrees of freedom
+df = totalDistrictsDaly + totalDistrictsEmanuel - 2
+
+# Calculate the p-value
+p = stats.t.sf(t, df)
+
+# Save the mean, standard deviation, t-statistic, and p-value for each mayor's term
+with open('mean_sd_t_stat_p_value.txt', 'w') as f:
     f.write(f"Mayor Daly (Districts): Mean = {meanDaly}, SD = {sdDaly}\n")
     f.write(f"Mayor Emanuel (Districts): Mean = {meanEmanuel}, SD = {sdEmanuel}\n")
     f.write(f"T-statistic for difference in means: {t}\n")
+    f.write(f"P-value for difference in means: {p}\n")

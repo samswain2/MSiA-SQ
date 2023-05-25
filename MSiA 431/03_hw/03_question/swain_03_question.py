@@ -137,6 +137,10 @@ pipeline_lr = Pipeline(stages=[assembler, lr])
 # Split the data
 (training_data, test_data) = aggregated_df.randomSplit([0.8, 0.2], seed=1234)
 
+# Persist training and testing data
+training_data.persist()
+test_data.persist()
+
 # Train and evaluate the models
 with open('model_results.txt', 'w') as f:
     for name, pipeline in [('Random Forest', pipeline_rf), ('Gradient-Boosted Tree', pipeline_gbt), ('Linear Regression', pipeline_lr)]:
