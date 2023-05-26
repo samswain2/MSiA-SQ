@@ -196,7 +196,7 @@ mse_values = {}
 sensitive_features_binned = pd.cut(sensitive_features, bins=income_bins, labels=income_labels, right=False)
 
 # Train and evaluate the models
-with open('model_results.txt', 'w') as f:
+with open('model_results.txt', 'w') as f, open('bias_results.txt', 'w') as bias_f:
     for name, pipeline in [('Random Forest', pipeline_rf), ('Gradient-Boosted Tree', pipeline_gbt), ('Linear Regression', pipeline_lr)]:
         model = pipeline.fit(training_data)
         predictions = model.transform(test_data)
@@ -227,14 +227,14 @@ with open('model_results.txt', 'w') as f:
         plt.close()  # Close the plot to clear the figure for the next iteration
 
         # Overall metric
-        f.write(f"Overall fairness metrics for {name}:\n")
-        f.write(str(metric_frame.overall))
-        f.write("\n")
+        bias_f.write(f"Overall fairness metrics for {name}:\n")
+        bias_f.write(str(metric_frame.overall))
+        bias_f.write("\n")
 
         # Metric per-group
-        f.write(f"Binned per-group fairness metrics for {name}:\n")
-        f.write(str(sorted_group_metrics))  # Save sorted binned results instead of raw metrics
-        f.write("\n")
+        bias_f.write(f"Binned per-group fairness metrics for {name}:\n")
+        bias_f.write(str(sorted_group_metrics))  # Save sorted binned results instead of raw metrics
+        bias_f.write("\n")
 
         evaluator = RegressionEvaluator(labelCol="total_crimes", predictionCol="prediction")
         rmse = evaluator.setMetricName("rmse").evaluate(predictions)

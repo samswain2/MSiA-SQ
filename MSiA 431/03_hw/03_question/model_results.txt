@@ -1,45 +1,15 @@
-Overall fairness metrics for Random Forest:
-17.424650124142
-Binned per-group fairness metrics for Random Forest:
-med_income
-$25k - $50k     21.296645
-$50k - $75k      9.578291
-$75k - $100k    11.641599
-< $25k          21.744470
-> $100k         10.317994
-Name: mean_squared_error, dtype: float64
 Random Forest:
 RMSE: 4.174284384675055
 R-squared: 0.6923870342635985
 Mean Absolute Error (as proxy for MAPE): 2.7814344378609874
 
-Overall fairness metrics for Gradient-Boosted Tree:
-16.18870661431098
-Binned per-group fairness metrics for Gradient-Boosted Tree:
-med_income
-$25k - $50k     20.036755
-$50k - $75k      8.700909
-$75k - $100k     9.941575
-< $25k          20.733367
-> $100k          8.616263
-Name: mean_squared_error, dtype: float64
 Gradient-Boosted Tree:
 RMSE: 4.02351918279396
 R-squared: 0.7142062527749085
 Mean Absolute Error (as proxy for MAPE): 2.668974717144743
 
-Overall fairness metrics for Linear Regression:
-15.790960565243598
-Binned per-group fairness metrics for Linear Regression:
-med_income
-$25k - $50k     19.361714
-$50k - $75k      8.486590
-$75k - $100k    10.436509
-< $25k          20.145268
-> $100k          8.858729
-Name: mean_squared_error, dtype: float64
 Linear Regression:
-RMSE: 3.973784161884437
-R-squared: 0.7212280202647494
-Mean Absolute Error (as proxy for MAPE): 2.6561221542845677
+RMSE: 3.973784160720211
+R-squared: 0.7212280204280967
+Mean Absolute Error (as proxy for MAPE): 2.6561221393401806
 
