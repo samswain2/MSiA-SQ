@@ -2,7 +2,7 @@
 
 As industries increasingly rely on machine learning (ML) models to make decisions, ensuring fair and equitable outcomes becomes paramount. The evaluation of fairness metrics, such as Mean Squared Error (MSE), is crucial for understanding disparities among different demographic groups. Today, we'll delve into how bias in data can manifest in MSE discrepancies across income groups within a Logistic Regression (LR) model.
 
-![plot](../03_hw/03_question/swain_LR_hist.png)
+![plot](./03_question/swain_LR_hist.png)
 
 The above bar graph presents MSE across five income brackets as determined by an LR model. A clear trend emerges: the MSE is substantially higher for individuals with an annual income of less than $50,000.
 
@@ -29,8 +29,8 @@ Addressing bias is a significant step towards fair ML models. By understanding i
 To gain a deeper understanding of the biases inherent in our data, it is crucial to examine the performance of various models. By comparing the MSE of different models across the same income groups, we can discern whether the high error rates for lower-income individuals are a general problem or tied to the LR model.
 
 <p float="left">
-  <img src="../03_hw/03_question/swain_GBT_hist.png" width="49%" />
-  <img src="../03_hw/03_question/swain_RF_hist.png" width="49%" />
+  <img src="./03_question/swain_GBT_hist.png" width="49%" />
+  <img src="./03_question/swain_RF_hist.png" width="49%" />
 </p>
 
 The above plots showcase the performance of different models, each providing unique insights into the representation of bias in our data. For example, if the high MSE for lower-income groups persists across all models, it suggests a pervasive bias in the data that must be addressed irrespective of model choice.
