@@ -1,17 +1,22 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import to_date, col, weekofyear, year, lit, count, when, countDistinct, sum as sql_sum
+from pyspark.sql.functions import to_date, col, weekofyear, year, lit, count, when, countDistinct, sum as sql_sum, lpad, monotonically_increasing_id
 from pyspark.ml.feature import VectorAssembler, StringIndexer
 from pyspark.ml.regression import RandomForestRegressor, GBTRegressor, LinearRegression
 from pyspark.ml import Pipeline
 from pyspark.ml.evaluation import RegressionEvaluator
 from pyspark.sql import Window
 from pyspark.sql.functions import lag
+from fairlearn.metrics import MetricFrame
+from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Define constants
 APP_NAME = "Chicago Crime Analysis"
 CRIMES_CSV = "hdfs:///user/sms5736/03_hw/Crimes_-_2001_to_present.csv"
 IUCR_CSV = "hdfs:///user/sms5736/03_hw/IUCR.csv"
 STOCK_CSV = "hdfs:///user/sms5736/03_hw/combined_sp500.csv"
+DEMOGRAPHIC_CSV = "hdfs:///user/sms5736/03_hw/demographic_data.csv"
 DATE_FORMAT = 'MM/dd/yyyy hh:mm:ss a'
 
 # Define Violent and Non-Violent Crimes
@@ -48,6 +53,15 @@ weekly_stock_df = weekly_stock_df.withColumn('avg_weekly_close_lag_1', lag('avg_
 weekly_stock_df = weekly_stock_df.withColumn('weekly_close_change', (col('avg_weekly_close') - col('avg_weekly_close_lag_1')) / col('avg_weekly_close_lag_1') * 100)
 weekly_stock_df = weekly_stock_df.na.fill(0)
 
+# Load in demographic data
+demographic_df = spark.read.csv(DEMOGRAPHIC_CSV, header=True)
+demographic_df = demographic_df.withColumn("beat", lpad(col("beat"), 4, '0'))
+
+# Convert all demographic numerical columns to float type
+for col_name in demographic_df.columns:
+    if col_name != 'beat':
+        demographic_df = demographic_df.withColumn(col_name, col(col_name).cast('float'))
+
 # Merge datasets and feature engineering
 joined_df = crime_df.join(iucr_df, crime_df.IUCR == iucr_df.IUCR_other, 'inner')
 joined_df = joined_df.withColumn("week_of_year", weekofyear(col("Date")))
@@ -83,7 +97,17 @@ for num_weeks_lag in [1, 2, 3, 4]:
     aggregated_df = aggregated_df.withColumn(f'total_arrests_lag_{num_weeks_lag}', lag('total_arrests', num_weeks_lag).over(window_spec))
     aggregated_df = aggregated_df.withColumn(f'total_domestic_crimes_lag_{num_weeks_lag}', lag('total_domestic_crimes', num_weeks_lag).over(window_spec))
 
+aggregated_df = aggregated_df.join(demographic_df, aggregated_df.Beat == demographic_df.beat, 'inner')
+
+# Fill nas with 0
 aggregated_df = aggregated_df.na.fill(0)
+
+# Convert Spark DataFrame to Pandas DataFrame
+pandas_df = aggregated_df.toPandas()
+
+# # Print df columns
+# for col in pandas_df.columns:
+#     print(col)
 
 # Define columns to be used for training
 TRAINING_COLUMNS = [
@@ -95,6 +119,19 @@ TRAINING_COLUMNS = [
     # Stock Info
     'avg_weekly_close',
     'weekly_close_change',
+
+    # Demographic Info
+    'num_white',
+    'num_hispanic',
+    'num_black',
+    'num_asian',
+    'num_mixed',
+    'num_other',
+    'bachelors',
+    'high_school',
+    'no_high_school',
+    'population',
+    'med_income',
 
     # Data Leakage:
     # 'total_arrests',
@@ -141,11 +178,64 @@ pipeline_lr = Pipeline(stages=[assembler, lr])
 training_data.persist()
 test_data.persist()
 
+# Convert test data to pandas
+pandas_test_data = test_data.toPandas()
+
+# Use the correct length for sensitive_features
+sensitive_features = pandas_test_data['med_income']
+
+# Define the income groups
+income_bins = [0, 25000, 50000, 75000, 100000, float('inf')]
+income_labels = ['$0 - $25k', '$25k - $50k', '$50k - $75k', '$75k - $100k', '> $100k']
+
+# Create dictionaries to store income and MSE values
+income_values = {}
+mse_values = {}
+
+# Bin the income into groups first
+sensitive_features_binned = pd.cut(sensitive_features, bins=income_bins, labels=income_labels, right=False)
+
 # Train and evaluate the models
 with open('model_results.txt', 'w') as f:
     for name, pipeline in [('Random Forest', pipeline_rf), ('Gradient-Boosted Tree', pipeline_gbt), ('Linear Regression', pipeline_lr)]:
         model = pipeline.fit(training_data)
         predictions = model.transform(test_data)
+
+        # Convert to pandas
+        pandas_predictions = predictions.toPandas()["prediction"].values
+        pandas_labels = predictions.toPandas()["total_crimes"].values
+
+        # Compute mean_squared_error for each group defined by the sensitive feature
+        metric_frame = MetricFrame(metrics=mean_squared_error, y_true=pandas_labels, y_pred=pandas_predictions, sensitive_features=sensitive_features_binned)
+
+        # Sort by index (income bins)
+        sorted_group_metrics = metric_frame.by_group.sort_index()
+
+        # Store income and MSE values in dictionaries
+        income_values[name] = sorted_group_metrics.index
+        mse_values[name] = sorted_group_metrics.values
+
+        # Plotting
+        plt.bar(income_values[name], mse_values[name], label=name)  # Bar plot instead of line plot
+        plt.xlabel('Income')
+        plt.ylabel('Mean Squared Error')
+        plt.title(name)
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.legend()
+        plt.savefig(f'{name}_plot.png')  # Save the plot as an image
+        plt.close()  # Close the plot to clear the figure for the next iteration
+
+        # Overall metric
+        f.write(f"Overall fairness metrics for {name}:\n")
+        f.write(str(metric_frame.overall))
+        f.write("\n")
+
+        # Metric per-group
+        f.write(f"Binned per-group fairness metrics for {name}:\n")
+        f.write(str(sorted_group_metrics))  # Save sorted binned results instead of raw metrics
+        f.write("\n")
+
         evaluator = RegressionEvaluator(labelCol="total_crimes", predictionCol="prediction")
         rmse = evaluator.setMetricName("rmse").evaluate(predictions)
         r2 = evaluator.setMetricName("r2").evaluate(predictions)
