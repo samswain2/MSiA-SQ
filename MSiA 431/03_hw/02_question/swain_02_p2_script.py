@@ -68,6 +68,6 @@ for i in range(correlation_matrix.shape[0]):
 beat_pairs_correlation.sort(key=lambda x: x[2], reverse=True)
 
 # Write the sorted pairs directly to the final file
-with open('beat_correlation_pairs_sorted.txt', 'w') as f:
+with open('swain_02_p2_output.txt', 'w') as f:
     for pair in beat_pairs_correlation:
         f.write(f"Correlation between beat {pair[0]} and beat {pair[1]}: {pair[2]}\n")

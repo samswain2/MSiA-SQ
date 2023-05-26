@@ -1,6 +1,7 @@
-Overall fairness metrics for Random Forest:
+Overall fairness metrics for RF:
 17.424650124142
-Binned per-group fairness metrics for Random Forest:
+
+Binned per-group fairness metrics for RF:
 med_income
 $0 - $25k       21.744470
 $25k - $50k     21.296645
@@ -8,9 +9,10 @@ $50k - $75k      9.578291
 $75k - $100k    11.641599
 > $100k         10.317994
 Name: mean_squared_error, dtype: float64
-Overall fairness metrics for Gradient-Boosted Tree:
+Overall fairness metrics for GBT:
 16.18870661431098
-Binned per-group fairness metrics for Gradient-Boosted Tree:
+
+Binned per-group fairness metrics for GBT:
 med_income
 $0 - $25k       20.733367
 $25k - $50k     20.036755
@@ -18,11 +20,12 @@ $50k - $75k      8.700909
 $75k - $100k     9.941575
 > $100k          8.616263
 Name: mean_squared_error, dtype: float64
-Overall fairness metrics for Linear Regression:
-15.79096055599084
-Binned per-group fairness metrics for Linear Regression:
+Overall fairness metrics for LR:
+15.790960587153716
+
+Binned per-group fairness metrics for LR:
 med_income
-$0 - $25k       20.145269
+$0 - $25k       20.145268
 $25k - $50k     19.361714
 $50k - $75k      8.486590
 $75k - $100k    10.436509

@@ -1,0 +1,65 @@
+Patterns of Arrests in Relation to Time: A Deep Dive into Chicago's Crime Data
+
+Understanding the patterns of crime incidents and their 
+corresponding arrests is a critical aspect of strategic policing. 
+This essay provides an in-depth analysis of the Chicago crime data 
+to understand patterns of crimes that ended in arrests with respect 
+to different timescales: hourly, daily, and monthly. By using Spark 
+for data manipulation and aggregation, and Python's Matplotlib 
+and Pandas for data visualization and manipulation, we can explore 
+these patterns more effectively.
+
+Hourly Analysis
+First, we took an hourly view of the arrests. It was observed that 
+the number of arrests shows a significant fluctuation throughout 
+the day. The arrest count was lowest during the early morning hours, 
+which could be attributed to lower overall activity during these 
+hours. However, from the morning through the afternoon, there was 
+a steady increase in the number of arrests, reaching its peak 
+during the late evening hours.
+
+The highest number of arrests were made around the hours of 19:00 
+to 22:00 (7 PM to 10 PM). This may be due to a variety of factors, 
+such as increased social activities during these hours. Such insights 
+can aid law enforcement in effective resource allocation, especially 
+during peak crime hours.
+
+Daily Analysis
+Next, we looked at the arrest counts per day of the week. The number 
+of arrests remained relatively stable throughout the week, with 
+slight increases towards the weekend. The highest number of arrests 
+occurred on Saturdays (Day 6), followed by Fridays (Day 5), and 
+Thursdays (Day 4). Interestingly, Sunday (Day 1) showed the lowest 
+number of arrests. These patterns could be influenced by social and 
+behavioral factors related to work schedules and weekend activities.
+
+Monthly Analysis
+Lastly, we analyzed the monthly distribution of arrests. The arrest 
+count seemed to follow a slightly varying pattern over the year, with 
+the number of arrests being slightly higher during the summer months. 
+Arrests peaked in August (8th month), followed by July (7th month) 
+and June (6th month), while the fewest arrests were seen in December 
+(12th month) and February (2nd month).
+
+This variation could be influenced by many factors such as climatic 
+conditions, as crime rates are often observed to increase during warmer 
+months. Understanding these patterns can help in developing proactive 
+crime prevention measures that are aligned with these seasonal patterns.
+
+Conclusion
+In summary, the analysis reveals significant patterns in the 
+distribution of arrests over different timescales. Recognizing these 
+patterns is valuable for law enforcement agencies, as it allows them 
+to deploy resources more strategically, aligning with the times when
+crimes leading to arrests are more likely to occur. Importantly, this 
+kind of data analysis can help to preempt crime, leading to safer communities.
+
+These findings underline the power of data science in aiding public 
+safety efforts. The advanced computational capabilities of Spark, 
+combined with the versatility of Python's data manipulation and 
+visualization tools, offer a potent toolkit for understanding complex
+datasets like the Chicago crime data. However, one should also be aware 
+of the limitations, such as potential biases in the data, and should 
+interpret the results accordingly. As we move forward, incorporating 
+additional data and refining the analysis techniques can provide even
+deeper insights into the patterns of crime and arrests.

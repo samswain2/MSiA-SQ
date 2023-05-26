@@ -30,14 +30,11 @@ result = spark.sql("""
     ORDER BY Month
 """)
 
-# Show the results
-result.show()
-
 # Collect the result as a list of Row
 result_collect = result.collect()
 
 # Open a file to write the result
-with open('average_crime_per_month.txt', 'w') as f:
+with open('swain_01_output.txt', 'w') as f:
     for row in result_collect:
         f.write(f"Month: {row['Month']}, Average_Crime_Events: {row['Average_Crime_Events']}\n")
 
@@ -49,4 +46,4 @@ plt.bar(result_pd['Month'], result_pd['Average_Crime_Events'])
 plt.xlabel('Month')
 plt.ylabel('Average Number of Crime Events')
 plt.title('Histogram of average crime events by month')
-plt.savefig('average_crime_events_histogram.png')
+plt.savefig('swain_01_hist.png')

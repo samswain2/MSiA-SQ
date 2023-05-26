@@ -1,2 +1,6 @@
+# Directories
 Data/*
+__pycache__/
+
+# File Extensions
 *.mp4

@@ -82,7 +82,7 @@ df = totalDistrictsDaly + totalDistrictsEmanuel - 2
 p = stats.t.sf(t, df)
 
 # Save the mean, standard deviation, t-statistic, and p-value for each mayor's term
-with open('mean_sd_t_stat_p_value.txt', 'w') as f:
+with open('swain_02_p3_output.txt', 'w') as f:
     f.write(f"Mayor Daly (Districts): Mean = {meanDaly}, SD = {sdDaly}\n")
     f.write(f"Mayor Emanuel (Districts): Mean = {meanEmanuel}, SD = {sdEmanuel}\n")
     f.write(f"T-statistic for difference in means: {t}\n")

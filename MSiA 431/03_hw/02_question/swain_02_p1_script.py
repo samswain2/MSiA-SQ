@@ -34,6 +34,6 @@ blockCounts = crimeDataLast3Years.map(lambda x: (x[1], 1)).reduceByKey(lambda a,
 top10Blocks = blockCounts.takeOrdered(10, key=lambda x: -x[1])
 
 # Open a file to write the result
-with open('top_10_crime_blocks_last_3_years.txt', 'w') as f:
+with open('swain_02_p1_output.txt', 'w') as f:
     for row in top10Blocks:
         f.write(f"Block: {row[0]}, Number of Crimes: {row[1]}\n")

@@ -196,8 +196,8 @@ mse_values = {}
 sensitive_features_binned = pd.cut(sensitive_features, bins=income_bins, labels=income_labels, right=False)
 
 # Train and evaluate the models
-with open('model_results.txt', 'w') as f, open('bias_results.txt', 'w') as bias_f:
-    for name, pipeline in [('Random Forest', pipeline_rf), ('Gradient-Boosted Tree', pipeline_gbt), ('Linear Regression', pipeline_lr)]:
+with open('swain_03_output_models.txt', 'w') as f, open('swain_03_output_bias.txt', 'w') as bias_f:
+    for name, pipeline in [('RF', pipeline_rf), ('GBT', pipeline_gbt), ('LR', pipeline_lr)]:
         model = pipeline.fit(training_data)
         predictions = model.transform(test_data)
 
@@ -223,13 +223,13 @@ with open('model_results.txt', 'w') as f, open('bias_results.txt', 'w') as bias_
         plt.xticks(rotation=45)
         plt.tight_layout()
         plt.legend()
-        plt.savefig(f'{name}_plot.png')  # Save the plot as an image
+        plt.savefig(f'swain_{name}_hist.png')  # Save the plot as an image
         plt.close()  # Close the plot to clear the figure for the next iteration
 
         # Overall metric
         bias_f.write(f"Overall fairness metrics for {name}:\n")
         bias_f.write(str(metric_frame.overall))
-        bias_f.write("\n")
+        bias_f.write("\n\n")
 
         # Metric per-group
         bias_f.write(f"Binned per-group fairness metrics for {name}:\n")

@@ -32,13 +32,13 @@ df_monthly_pd = df_monthly.toPandas()
 
 # Plot the data and save the plots
 df_hourly_pd.plot(kind='bar', x='Hour', y='count', title='Hourly Arrests')
-plt.savefig('hourly_arrests.png')
+plt.savefig('swain_04_hourly_hist.png')
 df_weekly_pd.plot(kind='bar', x='DayOfWeek', y='count', title='Weekly Arrests')
-plt.savefig('weekly_arrests.png')
+plt.savefig('swain_04_weekly_hist.png')
 df_monthly_pd.plot(kind='bar', x='Month', y='count', title='Monthly Arrests')
-plt.savefig('monthly_arrests.png')
+plt.savefig('swain_04_monthly_hist.png')
 
 # Save the pandas DataFrames to text files
-df_hourly_pd.to_csv('hourly_arrests.txt', index=False)
-df_weekly_pd.to_csv('weekly_arrests.txt', index=False)
-df_monthly_pd.to_csv('monthly_arrests.txt', index=False)
+df_hourly_pd.to_csv('swain_04_hourly_output.txt', index=False)
+df_weekly_pd.to_csv('swain_04_weekly_output.txt', index=False)
+df_monthly_pd.to_csv('swain_04_monthly_output.txt', index=False)
