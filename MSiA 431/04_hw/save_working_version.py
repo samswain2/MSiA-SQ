@@ -21,13 +21,12 @@ result_key = 'Exercise3.txt'
 result_location = result_prefix + result_key
 
 # Start a Spark Session
-spark = SparkSession.builder \
-    .appName('assignment') \
-    .getOrCreate()
+spark = SparkSession.builder.appName('assignment').getOrCreate()
 spark.sparkContext.setLogLevel("ERROR")
 
 # Load the data
-df = spark.read.csv(f's3://{data_bucket}/{data_key}', header=True)
+# df = spark.read.csv(f's3://{data_bucket}/{data_key}', header=True)
+df = spark.read.csv('s3://msia-432-hw4-data/full_data.csv', header=True)
 
 # Ensure the data types
 df = df.withColumn('trade_id', col('trade_id').cast(IntegerType()))
@@ -65,8 +64,12 @@ df = df.withColumn('rank', row_number().over(window))
 
 window_lag = Window.partitionBy('trade_id').orderBy('bar_num')
 
+# # Get lag profits
+# for i in range(11, 20):  # lag profits for last 10 bars
+#     df = df.withColumn(f'profit_lag_{i}', lag('profit', offset=i).over(window_lag))
+
 # Get lag vars
-for lag_offset in range(1, 2):
+for lag_offset in range(1, 7):
     for var_num in range(12, 79):  # feature columns
         var = f"var{var_num}"
         if var in df.columns:
@@ -84,11 +87,9 @@ df = df.withColumn('date', to_timestamp('time_stamp', 'yyyy-MM-dd HH:mm:ss'))
 # Extract year-month from date
 df = df.withColumn('year_month', date_format('time_stamp', 'yyyy-MM'))
 
-# Generate DataFrame of unique year-months sorted
-year_months_df = df.select('year_month').distinct().orderBy('year_month').toPandas()
-
-# Convert the Pandas DataFrame to a list
-year_months = year_months_df['year_month'].tolist()
+# Generate the list of unique year-months
+year_months = df.select('year_month').distinct().rdd.flatMap(lambda x: x).collect()
+year_months.sort()
 
 # Defining the input columns for the vector assembler
 input_cols = df.columns
@@ -134,13 +135,9 @@ for i in range(0, len(year_months)-6, 7):
     # Evaluate your predictions and store the RMSE and R-Squared result for later analysis
     rmse = evaluator_rmse.evaluate(predictions)
     r2 = evaluator_r2.evaluate(predictions)
-
-    r2_values.append(r2)  # add this line
     
     # Compute MAPE and store it for later analysis
     mape = predictions.select(F.avg(F.abs((predictions['profit'] - predictions['prediction']) / predictions['profit']))).alias('mape').collect()[0][0]
-    
-    mape_values.append(mape)  # add this line
     
     # Write the range of the training timeframe, RMSE, R-squared and MAPE for the current timeframe to file
     output += f'Training timeframe: {year_months[i]} to {year_months[i+5]}\n'
@@ -163,4 +160,4 @@ output += f'The maximum MAPE score: {max_mape}\n'
 output += f'The minimum MAPE score: {min_mape}\n'
 
 # Upload the file
-s3.put_object(Body=output, Bucket=result_bucket, Key=result_location)
+s3.put_object(Body=output, Bucket=result_bucket, Key=result_key)
