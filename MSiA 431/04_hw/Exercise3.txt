@@ -1,0 +1,84 @@
+Training timeframe: 2007-08 to 2008-01
+----------------------------------
+The RMSE for year-month 2008-02 is 52.2933623581314
+The R-squared for year-month 2008-02 is 0.7894111131571921
+The MAPE for year-month 2008-02 is 1.0636144558292975
+
+Training timeframe: 2008-03 to 2008-08
+----------------------------------
+The RMSE for year-month 2008-09 is 115.63754998573435
+The R-squared for year-month 2008-09 is 0.7440199130036669
+The MAPE for year-month 2008-09 is 1.171452048320426
+
+Training timeframe: 2008-10 to 2009-03
+----------------------------------
+The RMSE for year-month 2009-04 is 76.90668470815841
+The R-squared for year-month 2009-04 is 0.8225697677451623
+The MAPE for year-month 2009-04 is 1.3627201887206264
+
+Training timeframe: 2009-05 to 2009-10
+----------------------------------
+The RMSE for year-month 2009-11 is 58.900584675553425
+The R-squared for year-month 2009-11 is 0.8198065992507856
+The MAPE for year-month 2009-11 is 1.2520966757137388
+
+Training timeframe: 2009-12 to 2010-05
+----------------------------------
+The RMSE for year-month 2010-06 is 70.31454506311262
+The R-squared for year-month 2010-06 is 0.8293319911309662
+The MAPE for year-month 2010-06 is 1.0856061495111626
+
+Training timeframe: 2010-07 to 2010-12
+----------------------------------
+The RMSE for year-month 2011-01 is 70.92560776501827
+The R-squared for year-month 2011-01 is 0.7953271357791889
+The MAPE for year-month 2011-01 is 1.2142305529634563
+
+Training timeframe: 2011-02 to 2011-07
+----------------------------------
+The RMSE for year-month 2011-08 is 92.71305737873608
+The R-squared for year-month 2011-08 is 0.7844379711617588
+The MAPE for year-month 2011-08 is 1.28422269783076
+
+Training timeframe: 2011-09 to 2012-02
+----------------------------------
+The RMSE for year-month 2012-03 is 60.983032382049615
+The R-squared for year-month 2012-03 is 0.818927658918295
+The MAPE for year-month 2012-03 is 1.3429782942987756
+
+Training timeframe: 2012-04 to 2012-09
+----------------------------------
+The RMSE for year-month 2012-10 is 48.060111808414725
+The R-squared for year-month 2012-10 is 0.8260458477765386
+The MAPE for year-month 2012-10 is 0.9557590979840744
+
+Training timeframe: 2012-11 to 2013-04
+----------------------------------
+The RMSE for year-month 2013-05 is 54.48484689218767
+The R-squared for year-month 2013-05 is 0.8072493068240264
+The MAPE for year-month 2013-05 is 0.908769348078169
+
+Training timeframe: 2013-06 to 2013-11
+----------------------------------
+The RMSE for year-month 2013-12 is 42.30684338147704
+The R-squared for year-month 2013-12 is 0.7345212039495262
+The MAPE for year-month 2013-12 is 0.9952021018551872
+
+Training timeframe: 2014-01 to 2014-06
+----------------------------------
+The RMSE for year-month 2014-07 is 27.639201101006684
+The R-squared for year-month 2014-07 is 0.7138120898719955
+The MAPE for year-month 2014-07 is 0.77941319210365
+
+Training timeframe: 2014-08 to 2015-01
+----------------------------------
+The RMSE for year-month 2015-02 is 52.54586488817785
+The R-squared for year-month 2015-02 is 0.8150689824679827
+The MAPE for year-month 2015-02 is 0.8563632732923309
+
+Overall Results
+----------------------------------
+The overall R-squared value: 0.792348429310545
+The average MAPE score: 1.0978790828078195
+The maximum MAPE score: 1.3627201887206264
+The minimum MAPE score: 0.77941319210365

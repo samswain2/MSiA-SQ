@@ -1,6 +1,7 @@
 # Directories
 Data/*
 __pycache__/
+.ipynb_checkpoints/*
 
 # File Extensions
 *.mp4
