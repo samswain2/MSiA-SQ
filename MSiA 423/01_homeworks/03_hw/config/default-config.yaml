@@ -1,0 +1,32 @@
+run_config:
+  name: Cloud Prediction App
+  author: Sam Swain (AWS Expert)
+  version: default
+  description: Classifies clouds into one of two types.
+  dependencies: requirements.txt 
+
+models:
+  logistic_regression:
+    - log_entropy
+    - IR_norm_range
+    - visible_norm_range
+    - entropy_x_contrast
+  decision_tree:
+    - log_entropy
+    - IR_norm_range
+    - entropy_x_contrast
+  random_forest:
+    - log_entropy
+    - IR_norm_range
+    - visible_norm_range
+    - sqrt_visible_entropy
+    - entropy_x_contrast
+
+aws:
+  bucket_name: "sms5736"
+  prefix: "cloud_engineering"
+  region: "us-east-2"
+
+file_locations:
+  data: "data/features.csv"
+  models: "models/"

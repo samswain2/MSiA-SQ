@@ -2,7 +2,9 @@
 Data/*
 __pycache__/
 .ipynb_checkpoints/*
+.venv
 
 # File Extensions
 *.mp4
 *.pem
+*.log
