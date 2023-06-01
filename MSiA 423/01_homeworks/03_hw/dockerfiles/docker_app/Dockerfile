@@ -12,7 +12,9 @@ WORKDIR /hw03
 COPY src/ /hw03/src/
 COPY config /hw03/config/
 COPY app.py /hw03/
-COPY data/ /hw03/data/
 
-# Run pipeline.py when container launches
-CMD [ "python", "app.py"]
+# Expose the Streamlit web server's port
+EXPOSE 8501
+
+# Run the Streamlit app
+CMD ["streamlit", "run", "app.py"]

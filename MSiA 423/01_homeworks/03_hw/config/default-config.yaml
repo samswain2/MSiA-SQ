@@ -26,7 +26,5 @@ aws:
   bucket_name: "sms5736"
   prefix: "cloud_engineering"
   region: "us-east-2"
-
-file_locations:
-  data: "data/features.csv"
-  models: "models/"
+  data_file: "hw03_data/features.csv"
+  model_folder: "hw03_models/"
