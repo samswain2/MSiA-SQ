@@ -1,0 +1,116 @@
+1) Hive shell: "hive" MUST be in your local directory "cd ~"
+2) Can also write and execute Hive scripts: “hive -f hiveScript.hql”
+3) External tables: if you drop them, data in hdfs will NOT be deleted.
+4) Tables in the default database are accessible to everyone
+5) You cannot create a table if it already exists
+https://svn.apache.org/repos/infra/websites/production/hive/content/javadocs/r2.3.9/api/index.html
+
+
+### sample code from lab
+--create a quick table
+CREATE EXTERNAL TABLE titanic(
+PassengerId INT,
+Survived INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ","; 
+
+LOAD DATA INPATH "titanic_train.csv" into table titanic;
+LOAD DATA INPATH "data/titanic/titanic_train.csv" into table titanic;
+LOAD DATA LOCAL INPATH "titanic_train.csv" into table titanic;
+--use this for hw, and reference /home/public files
+
+--took the first two fields delimited by "," and ignored the rest
+SELECT * FROM titanic limit 5;
+
+--difference between external table and table when dropping
+DROP TABLE titanic;
+
+CREATE TABLE titanic(
+PassengerId INT,
+Survived INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ","; 
+LOAD DATA INPATH "data/titanic/titanic_train.csv" into table titanic;
+
+SELECT * FROM titanic limit 5;
+
+DROP TABLE titanic;
+
+CREATE TABLE titanic(
+PassengerId INT,
+Survived INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ","; 
+LOAD DATA INPATH "data/titanic/titanic_train.csv" into table titanic;
+
+SELECT * FROM titanic limit 5;
+--data now gone from hdfs, so we need to add it again
+
+exit;
+hdfs dfs -ls data/titanic
+hdfs dfs -copyFromLocal titanic_train.csv data/titanic/titanic_train.csv
+
+--databases
+CREATE DATABASE tlewis;
+SHOW DATABASES;
+DROP DATABASE tlewis;
+CREATE DATABASE tlewis;
+USE tlewis;
+
+--example of how to structure a .hql script so it can be rerun
+CREATE DATABASE IF NOT EXISTS tlewis;
+USE tlewis;
+
+DROP TABLE IF EXISTS titanic;
+DROP TABLE IF EXISTS titanic_fare;
+DROP TABLE IF EXISTS titanic_with_avg_fare;
+
+CREATE EXTERNAL TABLE titanic(
+PassengerId INT,
+Survived INT,
+pClass INT,
+Sex STRING,
+Age STRING,
+SibSp INT,
+Parch INT,
+Ticket STRING,
+Fare FLOAT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ","
+TBLPROPERTIES ("skip.header.line.count"="1");
+
+LOAD DATA LOCAL INPATH "titanic_no_name.csv" into table titanic;
+-- LOAD DATA LOCAL INPATH 'path_to_recommendation_engine_in_Wolf' INTO TABLE name_of_that_table;
+--Looking at data you may need:
+--FIELDS TERMINATED BY '\t'
+--LINES TERMINATED BY '\n'; this is the default
+
+--can also use create table AS (select...)
+CREATE TABLE IF NOT EXISTS titanic_fare(
+pClass INT,
+Sex STRING,
+avg_fare FLOAT);
+
+INSERT OVERWRITE TABLE titanic_fare
+SELECT pClass,
+Sex,
+avg(Fare) as avg_fare
+FROM titanic
+GROUP BY pClass, Sex;
+
+CREATE TABLE IF NOT EXISTS titanic_with_avg_fare AS (
+SELECT t.PassengerId,
+t.Survived,
+t.pClass,
+t.Sex,
+t.Age,
+t.Ticket,
+t.Fare,
+a.avg_fare,
+case when t.Fare > a.avg_fare then "Higher" else "Lower" end as high_cost_fares
+from titanic t
+LEFT JOIN titanic_fare a on (t.pClass = a.pClass AND t.Sex = a.Sex)
+);
+
+INSERT OVERWRITE LOCAL DIRECTORY "./titanic_hive_output"
+SELECT * from titanic_with_avg_fare;

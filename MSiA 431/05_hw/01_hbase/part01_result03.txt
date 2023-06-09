@@ -1,0 +1,11 @@
+HBase Shell
+Use "help" to get list of supported commands.
+Use "exit" to quit this interactive shell.
+For Reference, please visit: http://hbase.apache.org/2.0/book.html#shell
+Version 2.4.9, rc49f7f63fca144765bf7c2da41791769286dfccc, Fri Dec 17 19:02:09 PST 2021
+Took 0.0014 seconds
+hbase:001:0> scan 'emails', {COLUMNS => ['info:name', 'info:date', 'content:body'], FILTER => "SingleColumnValueFilter('info', 'name', =, 'binary:allen-p') AND SingleColumnValueFilter('info', 'date', =, 'substring:Feb 2002')"}
+ROW  COLUMN+CELL
+0 row(s)
+Took 0.3559 seconds
+hbase:002:0> 
