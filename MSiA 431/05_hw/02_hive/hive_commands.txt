@@ -1,0 +1,67 @@
+### Create database
+CREATE DATABASE IF NOT EXISTS movie_recommendation;
+
+
+
+### Use database
+USE movie_recommendation;
+
+
+
+### Create table
+CREATE TABLE movie_ratings (
+    userId INT,
+    movieId INT,
+    rating FLOAT,
+    rating_timestamp BIGINT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ",";
+
+
+
+### Load data into table
+LOAD DATA INPATH 'ratings.csv' INTO TABLE movie_ratings;
+
+
+
+### Create movie pairs table
+CREATE TABLE movie_pairs AS
+SELECT 
+    a.movieId AS movie1,
+    b.movieId AS movie2,
+    COUNT(*) AS pair_count
+FROM
+    movie_ratings a
+JOIN
+    movie_ratings b
+ON
+    (a.userId = b.userId AND a.movieId < b.movieId)
+WHERE
+    a.rating > 3 AND b.rating > 3
+GROUP BY
+    a.movieId, b.movieId;
+
+
+
+### Get recommendations
+CREATE TABLE movie_recommendations AS
+SELECT
+    movie1 AS recommended_movie,
+    SUM(pair_count) AS recommendation_score
+FROM
+    movie_pairs
+WHERE
+    movie2 = 296
+GROUP BY
+    movie1
+ORDER BY
+    recommendation_score DESC;
+
+
+
+### Save recommendations
+INSERT OVERWRITE DIRECTORY '/user/sms5736/hive_output'
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+SELECT * FROM movie_recommendations;
